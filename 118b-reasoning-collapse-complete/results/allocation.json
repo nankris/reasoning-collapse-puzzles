@@ -1,0 +1,35 @@
+{
+  "session": "b10-118b",
+  "start_epoch": 1792457735.098773,
+  "launch_epoch": 1792452470.742,
+  "rate_attributed": 1.54,
+  "rate_upper": 1.56,
+  "budget_CU": 8,
+  "stop_at_upper_CU": 7.85,
+  "usage_before": "97.51 CU; 1.62 CU/hour; 2 assignments",
+  "usage_after": "97.51 CU; 3.16 CU/hour; 3 assignments",
+  "allocation_start_note": "Exact CLI creation event for allocation 2; earlier allocation costs carried in base_CU fields.",
+  "rate_history": [
+    {
+      "rate_upper": 1.62,
+      "stop_at_upper_CU": 7.7,
+      "reason": "Initial conservative guard"
+    }
+  ],
+  "rate_refinement_utc": "2026-10-20T00:17:51.605956+00:00",
+  "rate_reason": "Allocation delta 3.16 - 1.62 = 1.54 CU/hour. Each displayed rate rounded to .01, so difference rounding error <=.01; use 1.56 upper, plus .15 CU stop headroom. Later other-GPU departure and arrival reproduced 1.62/3.16 account rates. No inference settings changed.",
+  "initial_conservative_start_epoch": 1792452400,
+  "creation_event": {
+    "timestamp": "2026-10-20T00:55:35.098773+00:00",
+    "event_type": "session_created",
+    "endpoint": "gpu-l4-s-kkb-ass1a1-hi0qjerpxwj4",
+    "variant": "GPU",
+    "accelerator": "L4",
+    "machine_shape": "STANDARD"
+  },
+  "base_CU_estimate": 2.206163755144013,
+  "base_CU_upper": 2.234815232483546,
+  "awaiting_replacement": false,
+  "allocation_number": 2,
+  "base_GPU_minutes": 85.95443201859793
+}

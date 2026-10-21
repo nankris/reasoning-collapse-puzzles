@@ -1,0 +1,16 @@
+{
+  "original": {
+    "url": "https://arxiv.org/html/2506.06941v1",
+    "read_date": "2026-10-18",
+    "claims_paraphrased": ["Thinking helps in an intermediate difficulty regime", "Both modes lose exact accuracy on larger puzzles", "Measured thinking tokens can decline near failure", "Providing a Hanoi algorithm does not reliably restore exhaustive execution"],
+    "relevant_methods": "25 samples per puzzle, up to 64k generation tokens; Hanoi validity rather than move optimality"
+  },
+  "rebuttal": {
+    "url": "https://arxiv.org/html/2506.09250v2",
+    "read_date": "2026-10-18",
+    "claims_paraphrased": ["Token ceilings and voluntary abbreviation can confound failure", "Some river-crossing configurations are impossible", "Compact generating functions can succeed when move lists fail"],
+    "cautions": "v2 corrects an earlier output-size assumption; its program experiment is preliminary and underpowered. This experiment does not independently adjudicate river-crossing impossibility claims."
+  },
+  "model_card": "https://huggingface.co/Qwen/Qwen3-8B",
+  "sampling_note": "Use Qwen thinking recommendation temperature=.6/top_p=.95/top_k=20 in BOTH modes to isolate the template switch; OFF is therefore not its separately optimized decoding recipe."
+}

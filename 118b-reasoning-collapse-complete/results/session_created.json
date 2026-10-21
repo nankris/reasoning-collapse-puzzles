@@ -1,0 +1,8 @@
+{
+  "timestamp": "2026-10-19T23:27:09.662407+00:00",
+  "event_type": "session_created",
+  "endpoint": "gpu-l4-s-kkb-ass1a0-1v248ziye1uga",
+  "variant": "GPU",
+  "accelerator": "L4",
+  "machine_shape": "STANDARD"
+}

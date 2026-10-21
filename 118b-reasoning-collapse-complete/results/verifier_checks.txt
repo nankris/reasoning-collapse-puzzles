@@ -1,0 +1,1 @@
+Verifier checks passed: Hanoi 3..10, checkers 2..5, programs and illegal moves

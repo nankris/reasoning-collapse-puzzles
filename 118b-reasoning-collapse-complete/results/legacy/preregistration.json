@@ -1,0 +1,50 @@
+{
+  "registered_utc": "2026-10-18T18:17:14.907607+00:00",
+  "confirm_model": "Qwen/Qwen3-8B-AWQ",
+  "pilot_complete_records": 18,
+  "pilot_planned_records": 36,
+  "pilot_early_stop": true,
+  "H1": {
+    "levels": [
+      4,
+      5,
+      6
+    ],
+    "margin": 0.1,
+    "metric": "paired mean ON minus OFF exact accuracy"
+  },
+  "H2": {
+    "threshold": 7,
+    "near_zero": 0.1,
+    "pilot_n5_thinking_accuracy": 0.5,
+    "heuristic_per_move_success": 0.9778885363354327,
+    "predicted_n7_accuracy": 0.05844509680099037,
+    "metric": "pooled exact accuracy at all n>=threshold, separately per mode; <=5% truncation in EVERY relevant cell required for PROVEN"
+  },
+  "H3": {
+    "peak_level": 5,
+    "late_level": 10,
+    "min_rise_ratio": 1.2,
+    "max_late_ratio": 0.8,
+    "metric": "mean measured thinking tokens at 5/3 and 10/5, both inequalities required; <=5% truncation in each cell required"
+  },
+  "H4": {
+    "levels": [
+      8,
+      9,
+      10
+    ],
+    "margin": 0.5,
+    "metric": "paired program-minus-moves accuracy pooled equally across three levels and both modes"
+  },
+  "samples": {
+    "per_cell": 25,
+    "move_cells": 24,
+    "program_cells": 6,
+    "total": 750
+  },
+  "bootstrap_resamples": 10000,
+  "confidence": 0.95,
+  "intervals": "stratified paired percentile bootstrap for differences; independent bootstrap for token mean ratios; Wilson for near-zero endpoint and displayed accuracy boundaries; per-level accuracy bootstrap also saved",
+  "overall_rule": "Three-regime pattern PROVEN only if H1,H2,H3 all PROVEN; DISPROVEN if any is DISPROVEN, otherwise INCONCLUSIVE. H4 is a separate representation claim. Incomplete confirmatory cells make affected hypotheses INCONCLUSIVE. Nominal separate 95% tests, no familywise claim."
+}

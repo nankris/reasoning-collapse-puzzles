@@ -1,0 +1,12 @@
+{
+  "estimated_minutes": {
+    "setup": 15,
+    "GPU run": 180,
+    "eval": 10,
+    "writeup": 25,
+    "total": 230
+  },
+  "start_ist": "2026-10-20T04:55:58.423379+05:30",
+  "GPU": "L4 (planned)",
+  "engine": "codex_hari"
+}

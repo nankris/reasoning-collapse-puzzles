@@ -1,0 +1,28 @@
+{
+  "records": 380,
+  "expected": 750,
+  "complete": false,
+  "missing": {
+    "('hanoi', 5, True, 'moves')": 20,
+    "('hanoi', 6, False, 'moves')": 25,
+    "('hanoi', 6, True, 'moves')": 25,
+    "('hanoi', 7, False, 'moves')": 25,
+    "('hanoi', 7, True, 'moves')": 25,
+    "('hanoi', 8, False, 'moves')": 25,
+    "('hanoi', 8, True, 'moves')": 25,
+    "('checkers', 2, False, 'moves')": 25,
+    "('checkers', 2, True, 'moves')": 25,
+    "('checkers', 3, False, 'moves')": 25,
+    "('checkers', 3, True, 'moves')": 25,
+    "('checkers', 4, False, 'moves')": 25,
+    "('checkers', 4, True, 'moves')": 25,
+    "('checkers', 5, False, 'moves')": 25,
+    "('checkers', 5, True, 'moves')": 25
+  },
+  "all_saved_outputs_reverified": true,
+  "seeds_and_instances_match": true,
+  "original_285_outputs_preserved_verbatim": true,
+  "total_output_tokens": 2105756,
+  "total_prompt_tokens": 64732,
+  "truncations": 105
+}

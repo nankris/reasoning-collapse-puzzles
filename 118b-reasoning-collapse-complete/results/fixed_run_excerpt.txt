@@ -1,0 +1,6 @@
+START confirm Qwen/Qwen3-8B-AWQ 1792452678.209328 resuming 285
+RESULT confirm:hanoi:10:0:moves:5 correct 0 tokens 16384 reason no_json_move_list finish length elapsed 1147.65
+RESULT confirm:hanoi:10:0:moves:6 correct 0 tokens 16384 reason no_json_move_list finish length elapsed 1147.71
+RESULT confirm:hanoi:10:0:moves:7 correct 0 tokens 16384 reason no_json_move_list finish length elapsed 1147.74
+RESULT confirm:hanoi:10:0:moves:8 correct 0 tokens 16384 reason no_json_move_list finish length elapsed 1147.76
+RESULT confirm:hanoi:10:0:moves:9 correct 0 tokens 16384 reason no_json_move_list finish length elapsed 1147.77

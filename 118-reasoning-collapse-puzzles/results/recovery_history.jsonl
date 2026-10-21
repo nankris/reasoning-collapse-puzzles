@@ -1,0 +1,8 @@
+{"timestamp": "2026-10-18T19:04:50.377197+00:00", "event_type": "file_operation", "op": "download", "remote": "/content/confirm.log", "local": "/workspace/work/tig/118-reasoning-collapse-puzzles/figures/confirm_run.txt.partial"}
+{"timestamp": "2026-10-18T19:05:39.811087+00:00", "event_type": "file_operation", "op": "download", "remote": "/content/exp118/confirm.jsonl", "local": "/workspace/work/tig/118-reasoning-collapse-puzzles/results/confirm.jsonl.partial"}
+{"timestamp": "2026-10-18T19:05:41.832279+00:00", "event_type": "file_operation", "op": "download", "remote": "/content/confirm.log", "local": "/workspace/work/tig/118-reasoning-collapse-puzzles/figures/confirm_run.txt.partial"}
+{"timestamp": "2026-10-18T19:06:31.807377+00:00", "event_type": "file_operation", "op": "download", "remote": "/content/exp118/confirm.jsonl", "local": "/workspace/work/tig/118-reasoning-collapse-puzzles/results/confirm.jsonl.partial"}
+{"timestamp": "2026-10-18T19:06:33.934079+00:00", "event_type": "file_operation", "op": "download", "remote": "/content/confirm.log", "local": "/workspace/work/tig/118-reasoning-collapse-puzzles/figures/confirm_run.txt.partial"}
+{"timestamp": "2026-10-18T19:07:22.835760+00:00", "event_type": "file_operation", "op": "download", "remote": "/content/exp118/confirm.jsonl", "local": "/workspace/work/tig/118-reasoning-collapse-puzzles/results/confirm.jsonl.partial"}
+{"timestamp": "2026-10-18T19:07:24.667890+00:00", "event_type": "file_operation", "op": "download", "remote": "/content/confirm.log", "local": "/workspace/work/tig/118-reasoning-collapse-puzzles/figures/confirm_run.txt.partial"}
+{"timestamp": "2026-10-18T19:22:58.595144+00:00", "event_type": "session_terminated", "reason": "pruned"}

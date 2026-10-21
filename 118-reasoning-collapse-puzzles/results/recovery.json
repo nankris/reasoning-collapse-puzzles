@@ -1,0 +1,22 @@
+{
+  "resume_utc": "2026-10-18T19:25:22.257627+00:00",
+  "previous_session_status": "not found; session_terminated reason pruned at 19:22:58.595144 UTC in CLI history",
+  "last_raw_checkpoint_records": 280,
+  "previous_cost_estimate_CU": 2.50669196085,
+  "previous_cost_conservative_upper_CU": 2.61,
+  "new_allocation_first_attempt_utc": "2026-10-18T19:24:00+00:00",
+  "allocation_status": "refused; two other named sessions active; neither touched",
+  "remaining_upper_budget_CU": 3.19,
+  "total_upper_limit_CU": 5.8,
+  "retry_after_utc": "2026-10-18T19:29:00+00:00",
+  "checkpoint_correction": "Initial commentary followed stale progress.json (278); actual raw-file audit found 280 saved answers, matching final log. No answers reconstructed from logs.",
+  "replacement_created_epoch": 1792351755.1820998,
+  "replacement_created_utc": "2026-10-18T19:29:15.182106+00:00",
+  "replacement_rate_observed_CU_hr": 1.54,
+  "guard_rate_CU_hr": 1.6,
+  "rate_evidence": "before allocation 1.54 CU/hour, after allocation 3.08 CU/hour; both Standard L4; original allocation counted through prune timestamp",
+  "remote_log": "/content/resume32.log",
+  "local_log": "figures/resume32_run.txt",
+  "concurrency_reverted_to": 32,
+  "saved_at_concurrency_restart": 285
+}

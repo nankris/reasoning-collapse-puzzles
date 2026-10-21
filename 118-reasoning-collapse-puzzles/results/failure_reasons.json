@@ -1,0 +1,8 @@
+{
+  "bad_peg": 5,
+  "incomplete_goal": 14,
+  "larger_on_smaller": 41,
+  "bad_move_format": 2,
+  "empty_source": 11,
+  "no_json_move_list": 10
+}

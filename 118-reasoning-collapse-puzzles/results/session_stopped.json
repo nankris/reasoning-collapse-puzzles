@@ -1,0 +1,26 @@
+{
+  "reason": "Both named allocations pruned; no active session at final resume. Insufficient remaining budget to complete 465 missing outputs after another setup.",
+  "records": 285,
+  "time_utc": "2026-10-18T22:47:21.020288+00:00",
+  "allocations": [
+    {
+      "created_utc": "2026-10-18T17:45:18.795755+00:00",
+      "terminated_utc": "2026-10-18T19:22:58.595144+00:00",
+      "reason": "pruned",
+      "hours": 1.6277220525
+    },
+    {
+      "created_utc": "2026-10-18T19:29:15.098539+00:00",
+      "terminated_utc": "2026-10-18T20:46:18.472346+00:00",
+      "reason": "pruned",
+      "hours": 1.2842705019444445
+    }
+  ],
+  "estimated_CU": 4.484468533844445,
+  "conservative_upper_CU": 4.664832803111111,
+  "rate_CU_per_hour": 1.54,
+  "stop_output": "colab stop -s b9-118: Session 'b9-118' not found.",
+  "usage_after": "119.06 CU balance; 0.00 CU/hour; 0 active assignments",
+  "cost_note": "Estimate counts entire allocations through prune events, including unsaved generation; not a per-experiment invoice.",
+  "final_session_check": "At 22:48 UTC, two unrelated sessions active; b9-118 absent. Neither unrelated session touched."
+}

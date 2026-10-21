@@ -1,0 +1,25 @@
+source-benchmark/
+__pycache__/
+*.tar.gz
+scripts/vendor/
+results/colab_key*
+run.log
+.pylib/
+.local/
+.cache/
+hf_cache/
+model/
+.venv/
+venv/
+node_modules/
+.deps/
+*.safetensors
+*.bin
+*.gguf
+*.pt
+*.tgz
+
+# keys never committed
+**/colab_key*
+**/colab_rsa*
+**/.local/

@@ -1,0 +1,172 @@
+START confirm Qwen/Qwen3-8B-AWQ 1792452678.209328 resuming 285
+(MainProcess pid=21841) INFO 10-19 23:31:18 [api_utils.py:286] non-default args: {'dtype': 'bfloat16', 'seed': 118, 'max_model_len': 20480, 'enable_prefix_caching': True, 'gpu_memory_utilization': 0.9, 'max_num_batched_tokens': 8192, 'max_num_seqs': 32, 'disable_log_stats': True, 'model': 'Qwen/Qwen3-8B-AWQ'}
+(MainProcess pid=21841) INFO 10-19 23:31:35 [model.py:733] Resolved architecture: Qwen3ForCausalLM
+(MainProcess pid=21841) WARNING 10-19 23:31:35 [model.py:2498] Casting torch.float16 to torch.bfloat16.
+(MainProcess pid=21841) INFO 10-19 23:31:35 [model.py:2152] Using max model len 20480
+(MainProcess pid=21841) INFO 10-19 23:31:36 [scheduler.py:307] Chunked prefill is enabled with max_num_batched_tokens=8192.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Parse safetensors files:   0%|          | 0/2 [00:00<?, ?it/s]Parse safetensors files:  50%|█████     | 1/2 [00:00<00:00,  1.25it/s]Parse safetensors files: 100%|██████████| 2/2 [00:01<00:00,  1.21it/s]Parse safetensors files: 100%|██████████| 2/2 [00:01<00:00,  1.21it/s]
+(MainProcess pid=21841) INFO 10-19 23:31:38 [kernel.py:467] Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['native'], fused_add_rms_norm=['native'], gelu_and_mul_sparse=['triton', 'native'])
+Fetching 10 files:   0%|          | 0/10 [00:00<?, ?it/s]Fetching 10 files:  30%|███       | 3/10 [00:00<00:00, 12.03it/s]Fetching 10 files: 100%|██████████| 10/10 [00:01<00:00,  5.30it/s]Fetching 10 files: 100%|██████████| 10/10 [00:01<00:00,  5.58it/s]
+(EngineCore pid=23084) INFO 10-19 23:31:44 [core.py:133] Initializing a V1 LLM engine (v0.32.0) with config: model='Qwen/Qwen3-8B-AWQ', speculative_config=None, tokenizer='Qwen/Qwen3-8B-AWQ', skip_tokenizer_init=False, tokenizer_mode=auto, revision=main, tokenizer_revision=main, trust_remote_code=False, dtype=torch.bfloat16, max_seq_len=20480, download_dir=None, load_format=auto, tensor_parallel_size=1, pipeline_parallel_size=1, data_parallel_size=1, decode_context_parallel_size=1, dcp_comm_backend=ag_rs, disable_custom_all_reduce=False, quantization=auto_awq, quantization_config=None, enforce_eager=False, aux_output_config=AuxOutputConfig(enable_return_routed_experts=False, max_bytes=None), kv_cache_dtype=auto, device_config=cuda, structured_outputs_config=StructuredOutputsConfig(backend='auto', disable_any_whitespace=False, disable_additional_properties=False, reasoning_parser='', reasoning_parser_plugin='', enable_in_reasoning=False), observability_config=ObservabilityConfig(show_hidden_metrics_for_version=None, otlp_traces_endpoint=None, collect_detailed_traces=None, per_request_spec_decode_metrics='none', kv_cache_metrics=False, kv_cache_metrics_sample=0.01, custom_histogram_buckets=None, cudagraph_metrics=False, enable_layerwise_nvtx_tracing=False, enable_mfu_metrics=False, enable_mm_processor_stats=False, enable_logging_iteration_details=False, jit_monitor_mode='warn', jit_monitor_verbose=False), seed=118, served_model_name=Qwen/Qwen3-8B-AWQ, enable_prefix_caching=True, enable_chunked_prefill=True, pooler_config=None, compilation_config={'mode': <CompilationMode.VLLM_COMPILE: 3>, 'debug_dump_path': None, 'cache_dir': '', 'compile_cache_save_format': 'binary', 'backend': 'inductor', 'custom_ops': ['none'], 'ir_enable_torch_wrap': True, 'splitting_ops': ['vllm::unified_attention_with_output', 'vllm::unified_mla_attention_with_output', 'vllm::mamba_mixer2', 'vllm::mamba_mixer', 'vllm::short_conv', 'vllm::qwen4_exp_ple_short_conv', 'vllm::qwen4_exp_qsa_with_output', 'vllm::qwen4_exp_qsa_prepare_with_output', 'vllm::linear_attention', 'vllm::qwen_gdn_attention_core', 'vllm::qwen_gdn_attention_core_fused_norm_packed', 'vllm::gdn_attention_core_xpu', 'vllm::olmo_hybrid_gdn_full_forward', 'vllm::sparse_attn_indexer', 'vllm::rocm_aiter_sparse_attn_indexer', 'vllm::deepseek_v4_attention', 'vllm::hpc_rope_norm_forward', 'vllm::unified_kv_cache_update', 'vllm::unified_mla_kv_cache_update'], 'compile_mm_encoder': False, 'cudagraph_mm_encoder': False, 'encoder_cudagraph_token_budgets': [], 'encoder_cudagraph_max_vision_items_per_batch': 0, 'encoder_cudagraph_max_frames_per_batch': None, 'cudagraph_decoder_replay': True, 'decoder_replay_cudagraph_capture_sizes': [], 'decoder_replay_trim_threshold': 768, 'compile_sizes': [], 'compile_ranges_endpoints': [8192], 'inductor_compile_config': {'enable_auto_functionalized_v2': False, 'combo_kernels': True, 'benchmark_combo_kernel': True}, 'inductor_passes': {}, 'cudagraph_mode': <CUDAGraphMode.FULL_AND_PIECEWISE: (2, 1)>, 'cudagraph_num_of_warmups': 1, 'cudagraph_capture_sizes': [1, 2, 4, 8, 16, 24, 32, 40, 48, 56, 64], 'cudagraph_copy_inputs': False, 'cudagraph_specialize_lora': True, 'use_inductor_graph_partition': False, 'pass_config': {'fuse_norm_quant': False, 'fuse_act_quant': False, 'fuse_attn_quant': False, 'fuse_allreduce_rms': False, 'enable_qk_norm_rope_fusion': False, 'fuse_rope_kvcache_cat_mla': False, 'fuse_act_padding': False, 'fuse_qk_norm_rope_kvcache': False}, 'max_cudagraph_capture_size': 64, 'dynamic_shapes_config': {'type': <DynamicShapesType.BACKED: 'backed'>, 'evaluate_guards': False, 'assume_32_bit_indexing': False}, 'local_cache_dir': None, 'fast_moe_cold_start': False, 'static_all_moe_layers': []}, kernel_config=KernelConfig(ir_op_priority=IrOpPriorityConfig(rms_norm=['native'], fused_add_rms_norm=['native'], gelu_and_mul_sparse=['triton', 'native']), enable_flashinfer_autotune=True, enable_rocm_segmented_attn_autotune=False, enable_cutedsl_warmup=True, enable_jit_warmup=True, moe_backend='auto', sparse_indexer_topk_backend='auto', linear_backend='auto', linear_backend_per_quant=None)
+(EngineCore pid=23084) INFO 10-19 23:31:44 [parallel_state.py:1906] world_size=1 rank=0 local_rank=0 distributed_init_method=file:///tmp/vllm_dist_1dce3903e23a4996ba4edd8843bdfcc4 backend=nccl
+(EngineCore pid=23084) INFO 10-19 23:31:44 [parallel_state.py:2350] rank 0 in world size 1 is assigned as DP rank 0, PP rank 0, PCP rank 0, TP rank 0, ETP rank 0, EP rank N/A, EPLB rank N/A
+(EngineCore pid=23084) INFO 10-19 23:31:44 [gpu_worker.py:518] Using V2 Model Runner
+(EngineCore pid=23084) INFO 10-19 23:31:46 [model_runner.py:392] Loading model from scratch...
+(EngineCore pid=23084) INFO 10-19 23:31:46 [__init__.py:923] Using MarlinLinearKernel for mixed-precision linear
+(EngineCore pid=23084) INFO 10-19 23:31:46 [auto_awq.py:451] Using MarlinLinearKernel for AutoAWQMarlinLinearMethod
+(EngineCore pid=23084) INFO 10-19 23:31:47 [cuda.py:506] Using FLASH_ATTN attention backend out of potential backends: ['FLASH_ATTN', 'FLASHINFER', 'TRITON_ATTN', 'FLEX_ATTENTION'].
+(EngineCore pid=23084) INFO 10-19 23:31:47 [flash_attn.py:1117] Using FlashAttention version 2
+(EngineCore pid=23084) INFO 10-19 23:31:47 [base_loader.py:82] Initializing model took 1.457963 seconds
+(EngineCore pid=23084) INFO 10-19 23:32:07 [weight_utils.py:532] Time spent downloading weights for Qwen/Qwen3-8B-AWQ: 18.979804 seconds
+(EngineCore pid=23084) INFO 10-19 23:32:07 [weight_utils.py:1108] Filesystem type for checkpoints: OVERLAY. Checkpoint size: 5.68 GiB. Available RAM: 49.26 GiB.
+(EngineCore pid=23084) INFO 10-19 23:32:07 [weight_utils.py:1131] Auto-prefetch is disabled because the filesystem (OVERLAY) is not a recognized network FS (NFS/Lustre). If you want to force prefetching, start vLLM with --safetensors-load-strategy=prefetch.
+Loading safetensors checkpoint shards:   0% Completed | 0/2 [00:00<?, ?it/s]
+Loading safetensors checkpoint shards:  50% Completed | 1/2 [00:01<00:01,  1.48s/it]
+Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:01<00:00,  1.18it/s]
+Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:01<00:00,  1.06it/s]
+
+(EngineCore pid=23084) INFO 10-19 23:32:09 [default_loader.py:501] Loading weights took 1.92 seconds
+(EngineCore pid=23084) INFO 10-19 23:32:12 [model_runner.py:424] Model loading took 5.71 GiB memory and 26.964948 seconds
+(EngineCore pid=23084) INFO 10-19 23:32:12 [topk_topp_sampler.py:124] Using FlashInfer for top-p & top-k sampling.
+(EngineCore pid=23084) INFO 10-19 23:32:12 [torch_utils.py:295] Reducing Torch threads from 6 to 1 for serving. Set OMP_NUM_THREADS in the external environment to override.
+(EngineCore pid=23084) INFO 10-19 23:32:12 [utils.py:347] Using LBNHC KV cache layout.
+(EngineCore pid=23084) INFO 10-19 23:32:14 [monitor.py:40] [backbone] Starting torch.compile
+(EngineCore pid=23084) INFO 10-19 23:32:30 [backends.py:1104] [backbone] Using cache directory: /root/.cache/vllm/torch_compile_cache/8e8c101eb0/rank_0_0/backbone for vLLM's torch.compile
+(EngineCore pid=23084) INFO 10-19 23:32:30 [backends.py:1166] [backbone] Dynamo bytecode transform time: 15.30 s
+(EngineCore pid=23084) INFO 10-19 23:33:02 [backends.py:398] [backbone] Compiling a graph for compile range (1, 8192) takes 31.74 s
+(EngineCore pid=23084) INFO 10-19 23:33:09 [backends.py:927] collected artifacts: 37 entries, 3 artifacts, 5864762 bytes total
+(EngineCore pid=23084) INFO 10-19 23:33:09 [decorators.py:743] [backbone] saved AOT compiled function to /root/.cache/vllm/torch_compile_cache/torch_aot_compile/92a80ed48339fc993a3196f4fe27f54b2abeb5652031337febb927b50f0edf04/rank_0_0/model
+(EngineCore pid=23084) INFO 10-19 23:33:09 [monitor.py:62] [backbone] torch.compile took 54.92 s in total
+(EngineCore pid=23084) INFO 10-19 23:33:10 [monitor.py:91] [backbone] Initial profiling/warmup run took 0.31 s
+Capturing CUDA graphs (PIECEWISE):   0%|          | 0/11 [00:00<?, ?it/s]Capturing CUDA graphs (PIECEWISE):  18%|█▊        | 2/11 [00:00<00:00, 13.13it/s]Capturing CUDA graphs (PIECEWISE):  36%|███▋      | 4/11 [00:00<00:00, 13.67it/s]Capturing CUDA graphs (PIECEWISE):  55%|█████▍    | 6/11 [00:00<00:00, 13.05it/s]Capturing CUDA graphs (PIECEWISE):  73%|███████▎  | 8/11 [00:00<00:00, 13.10it/s]Capturing CUDA graphs (PIECEWISE):  91%|█████████ | 10/11 [00:00<00:00, 13.17it/s]Capturing CUDA graphs (PIECEWISE): 100%|██████████| 11/11 [00:00<00:00, 13.23it/s]
+Capturing CUDA graphs (FULL):   0%|          | 0/2 [00:00<?, ?it/s]Capturing CUDA graphs (FULL): 100%|██████████| 2/2 [00:00<00:00, 15.89it/s]Capturing CUDA graphs (FULL): 100%|██████████| 2/2 [00:00<00:00, 15.86it/s]
+(EngineCore pid=23084) INFO 10-19 23:33:16 [model_runner.py:1127] Graph capturing finished in 2 secs, took 0.09 GiB
+(EngineCore pid=23084) INFO 10-19 23:33:17 [gpu_worker.py:759] Available KV cache memory: 12.61 GiB
+(EngineCore pid=23084) INFO 10-19 23:33:17 [gpu_worker.py:774] CUDA graph memory profiling is enabled (default since v0.21.0). The current --gpu-memory-utilization=0.9000 is equivalent to --gpu-memory-utilization=0.8948 without CUDA graph memory profiling. To maintain the same effective KV cache size as before, increase --gpu-memory-utilization to 0.9052. To disable, set VLLM_MEMORY_PROFILER_ESTIMATE_CUDAGRAPHS=0.
+(EngineCore pid=23084) INFO 10-19 23:33:17 [kv_cache_utils.py:2327] GPU KV cache size: 91,824 tokens, Maximum concurrency for 20,480 tokens per request: 4.48x
+(EngineCore pid=23084) INFO 10-19 23:33:17 [kernel_warmup.py:176] JIT kernel warmup starting.
+(EngineCore pid=23084) INFO 10-19 23:33:17 [kernel_warmup.py:189] JIT kernel warmup finished in 0.00s.
+2026-10-19 23:33:19,671 - INFO - core.py:564 - flashinfer.jit: Building JIT module sampling; this can take several minutes on first use.
+Capturing CUDA graphs (PIECEWISE):   0%|          | 0/11 [00:00<?, ?it/s]Capturing CUDA graphs (PIECEWISE):  18%|█▊        | 2/11 [00:00<00:00, 13.57it/s]Capturing CUDA graphs (PIECEWISE):  36%|███▋      | 4/11 [00:00<00:00, 13.84it/s]Capturing CUDA graphs (PIECEWISE):  55%|█████▍    | 6/11 [00:00<00:00, 13.45it/s]Capturing CUDA graphs (PIECEWISE):  73%|███████▎  | 8/11 [00:00<00:00, 13.26it/s]Capturing CUDA graphs (PIECEWISE):  91%|█████████ | 10/11 [00:00<00:00, 13.11it/s]Capturing CUDA graphs (PIECEWISE): 100%|██████████| 11/11 [00:00<00:00, 13.26it/s]
+Capturing CUDA graphs (FULL):   0%|          | 0/7 [00:00<?, ?it/s]Capturing CUDA graphs (FULL):  29%|██▊       | 2/7 [00:00<00:00, 15.09it/s]Capturing CUDA graphs (FULL):  57%|█████▋    | 4/7 [00:00<00:00, 14.96it/s]Capturing CUDA graphs (FULL):  86%|████████▌ | 6/7 [00:00<00:00, 15.20it/s]Capturing CUDA graphs (FULL): 100%|██████████| 7/7 [00:00<00:00, 15.27it/s]
+(EngineCore pid=23084) INFO 10-19 23:35:06 [model_runner.py:1127] Graph capturing finished in 3 secs, took 0.05 GiB
+(EngineCore pid=23084) INFO 10-19 23:35:06 [gpu_worker.py:971] CUDA graph pool memory: 0.05 GiB (actual), 0.12 GiB (estimated), difference: 0.07 GiB (145.8%).
+(EngineCore pid=23084) INFO 10-19 23:35:06 [gpu_worker.py:1034] Free memory on device (21.84/22.03 GiB) on startup. Desired GPU memory utilization is (0.9, 19.83 GiB). Actual usage is 5.83 GiB for consumed memory (weights + non-torch), 1.39 GiB for peak activation, and 0.05 GiB for CUDAGraph memory. Replace gpu_memory_utilization config with `--kv-cache-memory=13332536320` (12.42 GiB) to fit into requested memory, or `--kv-cache-memory=15495027712` (14.43 GiB) to fully utilize gpu memory. Current kv cache memory in use is 12.61 GiB.
+(EngineCore pid=23084) INFO 10-19 23:35:07 [jit_monitor.py:84] Kernel JIT monitor activated; monitored JIT compilations during inference will use mode=warn.
+(EngineCore pid=23084) INFO 10-19 23:35:07 [core.py:395] init engine (profile, create kv cache, warmup model) took 175.01 s (compilation: 54.92 s)
+(EngineCore pid=23084) INFO 10-19 23:35:07 [kernel.py:467] Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['native'], fused_add_rms_norm=['native'], gelu_and_mul_sparse=['triton', 'native'])
+(MainProcess pid=21841) INFO 10-19 23:35:08 [hf.py:648] Detected the chat template content format to be 'string'. You can set `--chat-template-content-format` to override this.
+META {"model": "Qwen/Qwen3-8B-AWQ", "phase": "confirm", "time": 1792452908.758013, "canonical_n10_tokens": 4094, "versions": "Name: vllm\nVersion: 0.32.0\nSummary: A high-throughput and memory-efficient inference and serving engine for LLMs\nHome-page: https://github.com/vllm-project/vllm\nAuthor: vLLM Team\nAuthor-email: \nLicense: \nLocation: /usr/local/lib/python3.13/dist-packages\nRequires: aiohttp, anthropic, apache-tvm-ffi, blake3, cachetools, cbor2, cloudpickle, compressed-tensors, depyf, einops, fastapi, fastsafetensors, filelock, flashinfer-python, huggingface_hub, humming-kernels, ijson, instanttensor, jsonschema, lark, llguidance, lm-format-enforcer, mcp, mistral_common, model-hosting-container-standards, msgspec, ninja, numba, numpy, nvidia-cudnn-frontend, nvidia-cutlass-dsl, nvtx, openai, opencv-python-headless, opentelemetry-api, opentelemetry-exporter-otlp, opentelemetry-sdk, opentelemetry-semantic-conventions-ai, oss-harmony, outlines_core, partial-json-parser, pillow, prometheus-fastapi-instrumentator, prometheus_client, protobuf, psutil, py-cpuinfo, pybase64, pydantic, PyNvVideoCodec, python-json-logger, pyyaml, pyzmq, quack-kernels, regex, requests, safetensors, sentencepiece, setproctitle, setuptools, six, starlette, tiktoken, tilelang, tokenizers, tokenspeed-mla, torch, torchaudio, torchcodec, torchvision, tqdm, transformers, typing_extensions, watchfiles, xgrammar\nRequired-by: \n---\nName: torch\nVersion: 2.13.0\nSummary: Tensors and Dynamic neural networks in Python with strong GPU acceleration\nHome-page: https://pytorch.org\nAuthor: \nAuthor-email: PyTorch Team <packages@pytorch.org>\nLicense: \nLocation: /usr/local/lib/python3.13/dist-packages\nRequires: cuda-bindings, cuda-toolkit, filelock, fsspec, jinja2, networkx, nvidia-cudnn-cu13, nvidia-cusparselt-cu13, nvidia-nccl-cu13, nvidia-nvshmem-cu13, setuptools, sympy, triton, typing-extensions\nRequired-by: accelerate, compressed-tensors, fastai, flashinfer-python, humming-kernels, instanttensor, peft, quack-kernels, sentence-transformers, tilelang, timm, tokenspeed-mla, torch_c_dlpack_ext, torchdata, torchvision, vllm, xgrammar\n---\nName: transformers\nVersion: 5.18.0\nSummary: Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training.\nHome-page: https://github.com/huggingface/transformers\nAuthor: The Hugging Face team (past and future) with the help of all our contributors (https://github.com/huggingface/transformers/graphs/contributors)\nAuthor-email: transformers@huggingface.co\nLicense: Apache 2.0 License\nLocation: /usr/local/lib/python3.13/dist-packages\nRequires: huggingface-hub, numpy, packaging, pyyaml, regex, safetensors, tokenizers, tqdm, typer\nRequired-by: compressed-tensors, peft, sentence-transformers, vllm, xgrammar", "gpu": "Mon Oct 19 23:35:12 2026       \n+-----------------------------------------------------------------------------------------+\n| NVIDIA-SMI 580.82.07              Driver Version: 580.82.07      CUDA Version: 13.0     |\n+-----------------------------------------+------------------------+----------------------+\n| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |\n| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |\n|                                         |                        |               MIG M. |\n|=========================================+========================+======================|\n|   0  NVIDIA L4                      Off |   00000000:00:03.0 Off |                    0 |\n| N/A   62C    P0             30W /   72W |   19194MiB /  23034MiB |      0%      Default |\n|                                         |                        |                  N/A |\n+-----------------------------------------+------------------------+----------------------+\n\n+-----------------------------------------------------------------------------------------+\n| Processes:                                                                              |\n|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |\n|        ID   ID                                                               Usage      |\n|=========================================================================================|\n|    0   N/A  N/A           23084      C   VLLM::EngineCore                      19186MiB |\n+-----------------------------------------------------------------------------------------+", "runner": "streaming engine; request-level checkpoints"}
+(MainProcess pid=21841) WARNING 10-19 23:35:12 [input_processor.py:408] Passing raw prompts to InputProcessor is deprecated and will be removed in the future. You should instead pass the outputs of Renderer.render_cmpl() or Renderer.render_chat().
+(EngineCore pid=23084) WARNING 10-19 23:35:17 [jit_monitor.py:140] Triton kernel JIT compilation during inference: _topk_topp_kernel. This causes a latency spike; consider extending warmup to cover this shape/config.
+(EngineCore pid=23084) WARNING 10-19 23:35:17 [jit_monitor.py:140] Triton kernel JIT compilation during inference: _topp_sb_stats_kernel. This causes a latency spike; consider extending warmup to cover this shape/config.
+(EngineCore pid=23084) WARNING 10-19 23:35:17 [jit_monitor.py:140] Triton kernel JIT compilation during inference: _topp_sb_step_kernel. This causes a latency spike; consider extending warmup to cover this shape/config.
+(EngineCore pid=23084) WARNING 10-19 23:35:19 [jit_monitor.py:140] Triton kernel JIT compilation during inference: _topp_sb_mask_kernel. This causes a latency spike; consider extending warmup to cover this shape/config.
+(EngineCore pid=23084) WARNING 10-19 23:35:19 [jit_monitor.py:140] Triton kernel JIT compilation during inference: _gumbel_sample_kernel. This causes a latency spike; consider extending warmup to cover this shape/config.
+HEARTBEAT confirm completed 285 elapsed 60.04
+HEARTBEAT confirm completed 285 elapsed 120.09
+HEARTBEAT confirm completed 285 elapsed 180.12
+HEARTBEAT confirm completed 285 elapsed 240.16
+HEARTBEAT confirm completed 285 elapsed 300.18
+HEARTBEAT confirm completed 285 elapsed 360.24
+HEARTBEAT confirm completed 285 elapsed 420.25
+HEARTBEAT confirm completed 285 elapsed 480.3
+HEARTBEAT confirm completed 285 elapsed 540.35
+HEARTBEAT confirm completed 285 elapsed 600.36
+HEARTBEAT confirm completed 285 elapsed 660.42
+HEARTBEAT confirm completed 285 elapsed 720.44
+HEARTBEAT confirm completed 285 elapsed 780.46
+HEARTBEAT confirm completed 285 elapsed 840.5
+HEARTBEAT confirm completed 285 elapsed 900.51
+HEARTBEAT confirm completed 285 elapsed 960.52
+HEARTBEAT confirm completed 285 elapsed 1020.56
+HEARTBEAT confirm completed 285 elapsed 1080.59
+HEARTBEAT confirm completed 285 elapsed 1140.65
+RESULT confirm:hanoi:10:0:moves:5 correct 0 tokens 16384 reason no_json_move_list finish length elapsed 1147.65
+RESULT confirm:hanoi:10:0:moves:6 correct 0 tokens 16384 reason no_json_move_list finish length elapsed 1147.71
+RESULT confirm:hanoi:10:0:moves:7 correct 0 tokens 16384 reason no_json_move_list finish length elapsed 1147.74
+RESULT confirm:hanoi:10:0:moves:8 correct 0 tokens 16384 reason no_json_move_list finish length elapsed 1147.76
+RESULT confirm:hanoi:10:0:moves:9 correct 0 tokens 16384 reason no_json_move_list finish length elapsed 1147.77
+HEARTBEAT confirm completed 290 elapsed 1200.7
+HEARTBEAT confirm completed 290 elapsed 1260.77
+RESULT confirm:hanoi:10:0:moves:10 correct 0 tokens 16384 reason no_json_move_list finish length elapsed 1268.02
+HEARTBEAT confirm completed 291 elapsed 1320.82
+HEARTBEAT confirm completed 291 elapsed 1380.89
+RESULT confirm:hanoi:10:0:moves:11 correct 0 tokens 16384 reason no_json_move_list finish length elapsed 1431.39
+HEARTBEAT confirm completed 292 elapsed 1440.93
+HEARTBEAT confirm completed 292 elapsed 1500.93
+RESULT confirm:hanoi:10:0:moves:12 correct 0 tokens 16384 reason no_json_move_list finish length elapsed 1554.51
+HEARTBEAT confirm completed 293 elapsed 1560.94
+HEARTBEAT confirm completed 293 elapsed 1621.02
+RESULT confirm:hanoi:10:0:moves:13 correct 0 tokens 16384 reason no_json_move_list finish length elapsed 1652.54
+HEARTBEAT confirm completed 294 elapsed 1681.03
+RESULT confirm:hanoi:10:0:moves:14 correct 0 tokens 16384 reason no_json_move_list finish length elapsed 1731.22
+HEARTBEAT confirm completed 295 elapsed 1741.09
+RESULT confirm:hanoi:10:0:moves:15 correct 0 tokens 16384 reason no_json_move_list finish length elapsed 1796.81
+HEARTBEAT confirm completed 296 elapsed 1801.31
+RESULT confirm:hanoi:10:0:moves:16 correct 0 tokens 16384 reason no_json_move_list finish length elapsed 1853.48
+HEARTBEAT confirm completed 297 elapsed 1861.37
+RESULT confirm:hanoi:10:0:moves:17 correct 0 tokens 16384 reason no_json_move_list finish length elapsed 1906.94
+HEARTBEAT confirm completed 298 elapsed 1921.42
+HEARTBEAT confirm completed 298 elapsed 1981.49
+HEARTBEAT confirm completed 298 elapsed 2041.55
+HEARTBEAT confirm completed 298 elapsed 2101.59
+RESULT confirm:hanoi:10:0:moves:18 correct 0 tokens 16384 reason no_json_move_list finish length elapsed 2114.82
+HEARTBEAT confirm completed 299 elapsed 2161.65
+HEARTBEAT confirm completed 299 elapsed 2221.66
+HEARTBEAT confirm completed 299 elapsed 2281.72
+RESULT confirm:hanoi:10:0:moves:19 correct 0 tokens 16384 reason no_json_move_list finish length elapsed 2315.85
+HEARTBEAT confirm completed 300 elapsed 2341.76
+HEARTBEAT confirm completed 300 elapsed 2401.8
+RESULT confirm:hanoi:10:0:moves:20 correct 0 tokens 16384 reason no_json_move_list finish length elapsed 2461.59
+HEARTBEAT confirm completed 301 elapsed 2464.63
+HEARTBEAT confirm completed 301 elapsed 2524.69
+RESULT confirm:hanoi:10:0:moves:21 correct 0 tokens 16384 reason no_json_move_list finish length elapsed 2546.95
+HEARTBEAT confirm completed 302 elapsed 2584.69
+RESULT confirm:hanoi:10:0:moves:22 correct 0 tokens 16384 reason no_json_move_list finish length elapsed 2612.77
+HEARTBEAT confirm completed 303 elapsed 2644.74
+RESULT confirm:hanoi:10:0:moves:23 correct 0 tokens 16384 reason no_json_move_list finish length elapsed 2673.92
+HEARTBEAT confirm completed 304 elapsed 2704.78
+RESULT confirm:hanoi:10:0:moves:24 correct 0 tokens 16384 reason no_json_move_list finish length elapsed 2724.69
+HEARTBEAT confirm completed 305 elapsed 2764.85
+RESULT confirm:hanoi:10:1:moves:0 correct 0 tokens 16384 reason no_json_move_list finish length elapsed 2770.23
+HEARTBEAT confirm completed 306 elapsed 2824.89
+HEARTBEAT confirm completed 306 elapsed 2884.96
+HEARTBEAT confirm completed 306 elapsed 2944.98
+RESULT confirm:hanoi:10:1:moves:1 correct 0 tokens 16384 reason no_json_move_list finish length elapsed 3001.16
+HEARTBEAT confirm completed 307 elapsed 3006.22
+HEARTBEAT confirm completed 307 elapsed 3066.28
+HEARTBEAT confirm completed 307 elapsed 3126.34
+HEARTBEAT confirm completed 307 elapsed 3186.39
+RESULT confirm:hanoi:10:1:moves:2 correct 0 tokens 16384 reason no_json_move_list finish length elapsed 3238.14
+HEARTBEAT confirm completed 308 elapsed 3246.43
+HEARTBEAT confirm completed 308 elapsed 3306.47
+HEARTBEAT confirm completed 308 elapsed 3366.49
+RESULT confirm:hanoi:10:1:moves:3 correct 0 tokens 16384 reason no_json_move_list finish length elapsed 3426.19
+HEARTBEAT confirm completed 309 elapsed 3429.38
+HEARTBEAT confirm completed 309 elapsed 3489.45
+RESULT confirm:hanoi:10:1:moves:4 correct 0 tokens 16384 reason no_json_move_list finish length elapsed 3508.94
+HEARTBEAT confirm completed 310 elapsed 3549.51
+RESULT confirm:hanoi:10:1:moves:5 correct 0 tokens 16384 reason no_json_move_list finish length elapsed 3584.0
+HEARTBEAT confirm completed 311 elapsed 3609.56
+RESULT confirm:hanoi:10:1:moves:6 correct 0 tokens 16384 reason no_json_move_list finish length elapsed 3626.18
+HEARTBEAT confirm completed 312 elapsed 3669.57
+RESULT confirm:hanoi:10:1:moves:7 correct 0 tokens 16384 reason no_json_move_list finish length elapsed 3669.82
+RESULT confirm:hanoi:10:1:moves:8 correct 0 tokens 16384 reason no_json_move_list finish length elapsed 3708.96
+HEARTBEAT confirm completed 314 elapsed 3729.61
+HEARTBEAT confirm completed 314 elapsed 3789.62
+HEARTBEAT confirm completed 314 elapsed 3849.7
+RESULT confirm:hanoi:10:1:moves:9 correct 0 tokens 16384 reason no_json_move_list finish length elapsed 3879.16
+HEARTBEAT confirm completed 315 elapsed 3909.73
+HEARTBEAT confirm completed 315 elapsed 3969.75
+HEARTBEAT confirm completed 315 elapsed 4029.76
+HEARTBEAT confirm completed 315 elapsed 4089.77
+HEARTBEAT confirm completed 315 elapsed 4149.8
+RESULT confirm:hanoi:10:1:moves:10 correct 0 tokens 16384 reason no_json_move_list finish length elapsed 4163.29
+HEARTBEAT confirm completed 316 elapsed 4209.84
+HEARTBEAT confirm completed 316 elapsed 4269.88
+HEARTBEAT confirm completed 316 elapsed 4329.94
+RESULT confirm:hanoi:10:1:moves:11 correct 0 tokens 16384 reason no_json_move_list finish length elapsed 4339.28
+HEARTBEAT confirm completed 317 elapsed 4389.94
+HEARTBEAT confirm completed 317 elapsed 4449.96

@@ -1,0 +1,28 @@
+{
+  "H1": {
+    "verdict": "INCONCLUSIVE",
+    "complete": false,
+    "note": "Planned sample incomplete; missing requests were not scored as failures and no partial-sample hypothesis test was performed"
+  },
+  "H2": {
+    "verdict": "INCONCLUSIVE",
+    "complete": false,
+    "note": "Planned sample incomplete; missing requests were not scored as failures and no partial-sample hypothesis test was performed"
+  },
+  "H3": {
+    "verdict": "INCONCLUSIVE",
+    "complete": false,
+    "note": "Planned sample incomplete; missing requests were not scored as failures and no partial-sample hypothesis test was performed"
+  },
+  "H4": {
+    "verdict": "INCONCLUSIVE",
+    "complete": false,
+    "note": "Planned sample incomplete; missing requests were not scored as failures and no partial-sample hypothesis test was performed"
+  },
+  "records": 380,
+  "planned_records": 750,
+  "total_output_tokens": 2105756,
+  "total_prompt_tokens": 64732,
+  "truncations": 105,
+  "overall_three_regime_verdict": "INCONCLUSIVE"
+}

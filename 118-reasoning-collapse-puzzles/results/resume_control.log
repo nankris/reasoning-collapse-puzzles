@@ -1,0 +1,47 @@
+2026-10-18T19:30:02.567133+00:00 saved 280 remaining_budget_minutes 74.2
+2026-10-18T19:30:49.348179+00:00 saved 280 remaining_budget_minutes 73.4
+2026-10-18T19:31:00.843288+00:00 saved 280 remaining_budget_minutes 117.9
+TimeoutExpired Command '['colab', 'download', '-s', 'b9-118', '/content/resume.log', '/workspace/work/tig/118-reasoning-collapse-puzzles/figures/resume_run.txt.partial']' timed out after 35 seconds
+2026-10-18T19:32:50.431233+00:00 saved 280 remaining_budget_minutes 116.0
+2026-10-18T19:33:38.951761+00:00 saved 280 remaining_budget_minutes 115.2
+2026-10-18T19:34:27.461422+00:00 saved 280 remaining_budget_minutes 114.4
+TimeoutExpired Command '['colab', 'download', '-s', 'b9-118', '/content/exp118/confirm_meta.json', '/workspace/work/tig/118-reasoning-collapse-puzzles/results/resume_meta.json.partial']' timed out after 35 seconds
+2026-10-18T19:36:36.255130+00:00 saved 280 remaining_budget_minutes 112.3
+2026-10-18T19:37:23.022846+00:00 saved 280 remaining_budget_minutes 111.5
+2026-10-18T19:38:10.292958+00:00 saved 280 remaining_budget_minutes 110.7
+2026-10-18T19:39:15.044767+00:00 saved 280 remaining_budget_minutes 109.6
+2026-10-18T19:40:03.396236+00:00 saved 280 remaining_budget_minutes 108.8
+2026-10-18T19:40:51.658989+00:00 saved 280 remaining_budget_minutes 108.0
+2026-10-18T19:41:39.649005+00:00 saved 280 remaining_budget_minutes 107.2
+2026-10-18T19:42:28.132173+00:00 saved 280 remaining_budget_minutes 106.4
+2026-10-18T19:43:19.079429+00:00 saved 280 remaining_budget_minutes 105.6
+2026-10-18T19:44:08.292901+00:00 saved 280 remaining_budget_minutes 104.7
+2026-10-18T19:44:58.367076+00:00 saved 280 remaining_budget_minutes 103.9
+2026-10-18T19:45:47.242509+00:00 saved 280 remaining_budget_minutes 103.1
+2026-10-18T19:46:42.194889+00:00 saved 280 remaining_budget_minutes 102.2
+2026-10-18T19:47:35.004885+00:00 saved 280 remaining_budget_minutes 101.3
+2026-10-18T19:48:24.370604+00:00 saved 280 remaining_budget_minutes 100.5
+2026-10-18T19:49:12.010114+00:00 saved 280 remaining_budget_minutes 99.7
+2026-10-18T19:50:00.842636+00:00 saved 285 remaining_budget_minutes 98.9
+2026-10-18T19:51:02.948368+00:00 saved 285 remaining_budget_minutes 97.8
+2026-10-18T19:51:52.093479+00:00 saved 285 remaining_budget_minutes 97.0
+2026-10-18T19:52:19.930880+00:00 saved 285 remaining_budget_minutes 96.5
+2026-10-18T19:53:08.727453+00:00 saved 285 remaining_budget_minutes 95.7
+2026-10-18T19:53:58.000504+00:00 saved 285 remaining_budget_minutes 94.9
+2026-10-18T19:54:53.409321+00:00 saved 285 remaining_budget_minutes 94.0
+2026-10-18T19:55:42.684901+00:00 saved 285 remaining_budget_minutes 93.2
+2026-10-18T19:56:30.334181+00:00 saved 285 remaining_budget_minutes 92.4
+2026-10-18T19:57:44.313476+00:00 saved 285 remaining_budget_minutes 91.1
+TimeoutExpired Command '['colab', 'download', '-s', 'b9-118', '/content/exp118/confirm_meta.json', '/workspace/work/tig/118-reasoning-collapse-puzzles/results/resume_meta.json.partial']' timed out after 35 seconds
+2026-10-18T19:59:51.499722+00:00 saved 285 remaining_budget_minutes 89.0
+2026-10-18T20:00:38.084380+00:00 saved 285 remaining_budget_minutes 88.2
+2026-10-18T20:01:24.578656+00:00 saved 285 remaining_budget_minutes 87.5
+2026-10-18T20:02:39.564513+00:00 saved 285 remaining_budget_minutes 86.2
+2026-10-18T20:03:26.579774+00:00 saved 285 remaining_budget_minutes 85.4
+2026-10-18T20:04:13.882532+00:00 saved 285 remaining_budget_minutes 84.6
+2026-10-18T20:04:59.639011+00:00 saved 285 remaining_budget_minutes 83.9
+2026-10-18T20:05:46.146266+00:00 saved 285 remaining_budget_minutes 83.1
+2026-10-18T20:06:44.570576+00:00 saved 285 remaining_budget_minutes 82.1
+2026-10-18T20:07:31.733782+00:00 saved 285 remaining_budget_minutes 81.3
+2026-10-18T20:08:18.674312+00:00 saved 285 remaining_budget_minutes 80.6
+2026-10-18T20:09:06.726752+00:00 saved 285 remaining_budget_minutes 79.8

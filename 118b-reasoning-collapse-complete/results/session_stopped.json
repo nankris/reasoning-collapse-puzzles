@@ -1,0 +1,14 @@
+{
+  "records": 417,
+  "missing": 333,
+  "generated_tokens": 2711964,
+  "elapsed_GPU_minutes": 303.73973658482237,
+  "allocation_elapsed_GPU_minutes": 217.78530456622443,
+  "CU_estimate": 7.795986572343773,
+  "CU_upper": 7.897233151205381,
+  "utc": "2026-10-20T04:33:22.217054+00:00",
+  "reason": "budget upper bound reached",
+  "stop_output": "[colab] Stopping session 'b10-118b'...\n[colab] Session terminated.\n",
+  "usage_before": "Current balance: 86.39 compute units\nUsage rate: 3.16/hr\nActive assignments: 3\n",
+  "usage_after": "Current balance: 86.39 compute units\nUsage rate: 1.62/hr\nActive assignments: 2\n"
+}

@@ -1,0 +1,12 @@
+{
+  "Qwen3-4B": {
+    "repo": "Qwen/Qwen3-4B",
+    "sha": "1cfa9a7208912126459214e8b04321603b3df60c",
+    "lastModified": "2025-07-26T03:46:39.000Z"
+  },
+  "Qwen3-8B-AWQ": {
+    "repo": "Qwen/Qwen3-8B-AWQ",
+    "sha": "4da05a8edb55c6046cce958586c33b61da07bb79",
+    "lastModified": "2025-05-21T06:09:42.000Z"
+  }
+}

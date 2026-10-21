@@ -1,0 +1,29 @@
+HARDWARE CHECK epoch 1792454575.3545907
+Tue Oct 20 00:02:55 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 580.82.07              Driver Version: 580.82.07      CUDA Version: 13.0     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA L4                      Off |   00000000:00:03.0 Off |                    0 |
+| N/A   77C    P0             71W /   72W |   20490MiB /  23034MiB |    100%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|    0   N/A  N/A           23084      C   VLLM::EngineCore                      20482MiB |
++-----------------------------------------------------------------------------------------+
+  21841    2105 python3 -u /content/run_gpu.py --phase confirm
+  23084    1871 VLLM::EngineCore
+  31063       0 /bin/sh -c ps -eo pid,etimes,args | grep -E "run_gpu.py|VLLM::EngineCore" | head -5
+  31065       0 grep -E run_gpu.py|VLLM::EngineCore
+RESULT confirm:hanoi:10:0:moves:12 correct 0 tokens 16384 reason no_json_move_list finish length elapsed 1554.51
+HEARTBEAT confirm completed 293 elapsed 1560.94
+HEARTBEAT confirm completed 293 elapsed 1621.02
+RESULT confirm:hanoi:10:0:moves:13 correct 0 tokens 16384 reason no_json_move_list finish length elapsed 1652.54

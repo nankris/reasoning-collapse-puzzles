@@ -1,0 +1,359 @@
+2026-10-20T01:09:52.623091+00:00 returncode=0
+REMOTE_CHECK 1792458591.6315057 runner_alive True checkpoint_lines 317
+name, utilization.gpu [%], memory.used [MiB]
+NVIDIA L4, 100 %, 19780 MiB
+HEARTBEAT confirm completed 317 elapsed 240.1
+HEARTBEAT confirm completed 317 elapsed 300.14
+
+2026-10-20T01:13:19.651630+00:00 returncode=0
+REMOTE_CHECK 1792458798.6763737 runner_alive True checkpoint_lines 317
+name, utilization.gpu [%], memory.used [MiB]
+NVIDIA L4, 100 %, 19780 MiB
+HEARTBEAT confirm completed 317 elapsed 420.21
+HEARTBEAT confirm completed 317 elapsed 480.24
+
+2026-10-20T01:16:50.036632+00:00 returncode=0
+REMOTE_CHECK 1792458999.3390849 runner_alive True checkpoint_lines 317
+name, utilization.gpu [%], memory.used [MiB]
+NVIDIA L4, 100 %, 19780 MiB
+HEARTBEAT confirm completed 317 elapsed 660.36
+HEARTBEAT confirm completed 317 elapsed 720.43
+
+2026-10-20T01:20:16.206919+00:00 returncode=0
+REMOTE_CHECK 1792459215.27275 runner_alive True checkpoint_lines 317
+name, utilization.gpu [%], memory.used [MiB]
+NVIDIA L4, 100 %, 19780 MiB
+HEARTBEAT confirm completed 317 elapsed 840.48
+HEARTBEAT confirm completed 317 elapsed 900.54
+
+2026-10-20T01:24:20.749119+00:00 returncode=0
+REMOTE_CHECK 1792459459.6731832 runner_alive True checkpoint_lines 322
+name, utilization.gpu [%], memory.used [MiB]
+NVIDIA L4, 100 %, 20454 MiB
+RESULT confirm:hanoi:10:1:moves:15 correct 0 tokens 16384 reason no_json_move_list finish length elapsed 1148.76
+RESULT confirm:hanoi:10:1:moves:16 correct 0 tokens 16384 reason no_json_move_list finish length elapsed 1148.77
+
+2026-10-20T01:27:56.280307+00:00 returncode=0
+REMOTE_CHECK 1792459665.552582 runner_alive True checkpoint_lines 323
+name, utilization.gpu [%], memory.used [MiB]
+NVIDIA L4, 100 %, 20454 MiB
+HEARTBEAT confirm completed 323 elapsed 1320.9
+HEARTBEAT confirm completed 323 elapsed 1380.95
+
+2026-10-20T01:31:49.972739+00:00 returncode=0
+REMOTE_CHECK 1792459908.9681933 runner_alive True checkpoint_lines 325
+name, utilization.gpu [%], memory.used [MiB]
+NVIDIA L4, 100 %, 20454 MiB
+HEARTBEAT confirm completed 325 elapsed 1561.02
+HEARTBEAT confirm completed 325 elapsed 1621.06
+
+2026-10-20T01:36:15.625066+00:00 returncode=0
+REMOTE_CHECK 1792460174.6048326 runner_alive True checkpoint_lines 329
+name, utilization.gpu [%], memory.used [MiB]
+NVIDIA L4, 100 %, 20454 MiB
+RESULT confirm:hanoi:10:1:moves:23 correct 0 tokens 16384 reason no_json_move_list finish length elapsed 1853.06
+HEARTBEAT confirm completed 329 elapsed 1861.21
+
+2026-10-20T01:40:14.067207+00:00 returncode=0
+REMOTE_CHECK 1792460413.0949557 runner_alive True checkpoint_lines 331
+name, utilization.gpu [%], memory.used [MiB]
+NVIDIA L4, 100 %, 20454 MiB
+HEARTBEAT confirm completed 330 elapsed 2101.33
+RESULT confirm:hanoi:9:0:moves:0 correct 0 tokens 16384 reason no_json_move_list finish length elapsed 2113.62
+
+2026-10-20T01:44:14.899068+00:00 returncode=0
+REMOTE_CHECK 1792460653.91293 runner_alive True checkpoint_lines 332
+name, utilization.gpu [%], memory.used [MiB]
+NVIDIA L4, 100 %, 20454 MiB
+RESULT confirm:hanoi:9:0:moves:1 correct 0 tokens 16384 reason no_json_move_list finish length elapsed 2313.54
+HEARTBEAT confirm completed 332 elapsed 2341.47
+
+2026-10-20T01:48:24.961978+00:00 returncode=0
+REMOTE_CHECK 1792460904.0035121 runner_alive True checkpoint_lines 335
+name, utilization.gpu [%], memory.used [MiB]
+NVIDIA L4, 100 %, 20456 MiB
+HEARTBEAT confirm completed 334 elapsed 2582.73
+RESULT confirm:hanoi:9:0:moves:4 correct 0 tokens 16384 reason no_json_move_list finish length elapsed 2611.07
+
+2026-10-20T01:52:39.880461+00:00 returncode=0
+REMOTE_CHECK 1792461149.0230465 runner_alive True checkpoint_lines 338
+name, utilization.gpu [%], memory.used [MiB]
+NVIDIA L4, 100 %, 20456 MiB
+RESULT confirm:hanoi:9:0:moves:7 correct 0 tokens 16384 reason no_json_move_list finish length elapsed 2768.29
+HEARTBEAT confirm completed 338 elapsed 2822.96
+
+2026-10-20T01:56:25.023820+00:00 returncode=0
+REMOTE_CHECK 1792461384.0253243 runner_alive True checkpoint_lines 339
+name, utilization.gpu [%], memory.used [MiB]
+NVIDIA L4, 100 %, 20456 MiB
+HEARTBEAT confirm completed 339 elapsed 3003.62
+HEARTBEAT confirm completed 339 elapsed 3063.65
+
+2026-10-20T02:00:22.266711+00:00 returncode=0
+REMOTE_CHECK 1792461621.2366197 runner_alive True checkpoint_lines 340
+name, utilization.gpu [%], memory.used [MiB]
+NVIDIA L4, 100 %, 20456 MiB
+HEARTBEAT confirm completed 340 elapsed 3243.77
+HEARTBEAT confirm completed 340 elapsed 3303.82
+
+2026-10-20T02:03:44.858802+00:00 returncode=0
+REMOTE_CHECK 1792461823.9330683 runner_alive True checkpoint_lines 342
+name, utilization.gpu [%], memory.used [MiB]
+NVIDIA L4, 100 %, 20456 MiB
+RESULT confirm:hanoi:9:0:moves:11 correct 0 tokens 16384 reason no_json_move_list finish length elapsed 3505.98
+HEARTBEAT confirm completed 342 elapsed 3543.93
+
+2026-10-20T02:07:08.065334+00:00 returncode=0
+REMOTE_CHECK 1792462027.1357448 runner_alive True checkpoint_lines 346
+name, utilization.gpu [%], memory.used [MiB]
+NVIDIA L4, 100 %, 20456 MiB
+RESULT confirm:hanoi:9:0:moves:15 correct 0 tokens 16384 reason no_json_move_list finish length elapsed 3707.11
+HEARTBEAT confirm completed 346 elapsed 3724.0
+
+2026-10-20T02:10:55.422554+00:00 returncode=0
+REMOTE_CHECK 1792462254.5215473 runner_alive True checkpoint_lines 347
+name, utilization.gpu [%], memory.used [MiB]
+NVIDIA L4, 100 %, 20456 MiB
+HEARTBEAT confirm completed 347 elapsed 3904.1
+HEARTBEAT confirm completed 347 elapsed 3964.17
+
+2026-10-20T02:14:45.248544+00:00 returncode=0
+REMOTE_CHECK 1792462484.1937587 runner_alive True checkpoint_lines 348
+name, utilization.gpu [%], memory.used [MiB]
+NVIDIA L4, 100 %, 20456 MiB
+RESULT confirm:hanoi:9:0:moves:17 correct 0 tokens 16384 reason no_json_move_list finish length elapsed 4160.23
+HEARTBEAT confirm completed 348 elapsed 4204.27
+
+2026-10-20T02:18:44.915191+00:00 returncode=0
+REMOTE_CHECK 1792462714.0385306 runner_alive True checkpoint_lines 349
+name, utilization.gpu [%], memory.used [MiB]
+NVIDIA L4, 100 %, 20456 MiB
+RESULT confirm:hanoi:9:0:moves:18 correct 0 tokens 16384 reason no_json_move_list finish length elapsed 4335.33
+HEARTBEAT confirm completed 349 elapsed 4384.38
+
+2026-10-20T02:23:02.584896+00:00 returncode=0
+REMOTE_CHECK 1792462971.7005951 runner_alive True checkpoint_lines 351
+name, utilization.gpu [%], memory.used [MiB]
+NVIDIA L4, 100 %, 20456 MiB
+RESULT confirm:hanoi:9:0:moves:20 correct 0 tokens 16384 reason no_json_move_list finish length elapsed 4667.79
+HEARTBEAT confirm completed 351 elapsed 4684.56
+
+2026-10-20T02:26:44.708708+00:00 returncode=0
+REMOTE_CHECK 1792463203.732814 runner_alive True checkpoint_lines 355
+name, utilization.gpu [%], memory.used [MiB]
+NVIDIA L4, 100 %, 20456 MiB
+HEARTBEAT confirm completed 355 elapsed 4864.72
+HEARTBEAT confirm completed 355 elapsed 4924.75
+
+2026-10-20T02:30:47.778577+00:00 returncode=0
+REMOTE_CHECK 1792463446.7418194 runner_alive True checkpoint_lines 356
+name, utilization.gpu [%], memory.used [MiB]
+NVIDIA L4, 100 %, 20456 MiB
+HEARTBEAT confirm completed 356 elapsed 5104.88
+HEARTBEAT confirm completed 356 elapsed 5164.91
+
+2026-10-20T02:36:44.672775+00:00 returncode=0
+REMOTE_CHECK 1792463803.5755541 runner_alive True checkpoint_lines 358
+name, utilization.gpu [%], memory.used [MiB]
+NVIDIA L4, 100 %, 20456 MiB
+RESULT confirm:hanoi:9:1:moves:2 correct 0 tokens 16384 reason no_json_move_list finish length elapsed 5474.52
+HEARTBEAT confirm completed 358 elapsed 5525.22
+
+2026-10-20T02:40:29.731249+00:00 returncode=0
+REMOTE_CHECK 1792464028.7778864 runner_alive True checkpoint_lines 362
+name, utilization.gpu [%], memory.used [MiB]
+NVIDIA L4, 100 %, 20456 MiB
+HEARTBEAT confirm completed 361 elapsed 5705.31
+RESULT confirm:hanoi:9:1:moves:6 correct 0 tokens 16384 reason no_json_move_list finish length elapsed 5736.15
+
+2026-10-20T02:44:32.722053+00:00 returncode=0
+REMOTE_CHECK 1792464271.7678697 runner_alive True checkpoint_lines 364
+name, utilization.gpu [%], memory.used [MiB]
+NVIDIA L4, 100 %, 20456 MiB
+HEARTBEAT confirm completed 363 elapsed 5945.49
+RESULT confirm:hanoi:9:1:moves:8 correct 0 tokens 16384 reason no_json_move_list finish length elapsed 5973.95
+
+2026-10-20T02:48:41.617974+00:00 returncode=0
+REMOTE_CHECK 1792464520.6821444 runner_alive True checkpoint_lines 365
+name, utilization.gpu [%], memory.used [MiB]
+NVIDIA L4, 100 %, 20456 MiB
+RESULT confirm:hanoi:9:1:moves:9 correct 0 tokens 16384 reason no_json_move_list finish length elapsed 6196.16
+HEARTBEAT confirm completed 365 elapsed 6245.63
+
+2026-10-20T02:52:50.459940+00:00 returncode=0
+REMOTE_CHECK 1792464769.47548 runner_alive True checkpoint_lines 367
+name, utilization.gpu [%], memory.used [MiB]
+NVIDIA L4, 100 %, 20456 MiB
+RESULT confirm:hanoi:9:1:moves:11 correct 0 tokens 16384 reason no_json_move_list finish length elapsed 6484.33
+HEARTBEAT confirm completed 367 elapsed 6487.29
+
+2026-10-20T02:56:27.340984+00:00 returncode=0
+REMOTE_CHECK 1792464976.631079 runner_alive True checkpoint_lines 369
+name, utilization.gpu [%], memory.used [MiB]
+NVIDIA L4, 100 %, 20456 MiB
+RESULT confirm:hanoi:9:1:moves:13 correct 0 tokens 16384 reason no_json_move_list finish length elapsed 6638.57
+HEARTBEAT confirm completed 369 elapsed 6667.38
+
+2026-10-20T02:59:49.734850+00:00 returncode=0
+REMOTE_CHECK 1792465188.736256 runner_alive True checkpoint_lines 372
+name, utilization.gpu [%], memory.used [MiB]
+NVIDIA L4, 100 %, 20456 MiB
+HEARTBEAT confirm completed 372 elapsed 6847.55
+HEARTBEAT confirm completed 372 elapsed 6907.6
+
+2026-10-20T03:03:11.491068+00:00 returncode=0
+REMOTE_CHECK 1792465390.5562885 runner_alive True checkpoint_lines 373
+name, utilization.gpu [%], memory.used [MiB]
+NVIDIA L4, 100 %, 20456 MiB
+RESULT confirm:hanoi:9:1:moves:17 correct 0 tokens 16384 reason no_json_move_list finish length elapsed 7042.77
+HEARTBEAT confirm completed 373 elapsed 7087.69
+
+2026-10-20T03:08:02.308665+00:00 returncode=0
+REMOTE_CHECK 1792465681.3095174 runner_alive True checkpoint_lines 374
+name, utilization.gpu [%], memory.used [MiB]
+NVIDIA L4, 100 %, 20456 MiB
+HEARTBEAT confirm completed 374 elapsed 7327.85
+HEARTBEAT confirm completed 374 elapsed 7387.88
+
+2026-10-20T03:11:26.303406+00:00 returncode=0
+REMOTE_CHECK 1792465885.1750524 runner_alive True checkpoint_lines 376
+name, utilization.gpu [%], memory.used [MiB]
+NVIDIA L4, 100 %, 20456 MiB
+RESULT confirm:hanoi:9:1:moves:20 correct 0 tokens 16384 reason no_json_move_list finish length elapsed 7567.17
+HEARTBEAT confirm completed 376 elapsed 7570.11
+
+2026-10-20T03:17:52.929811+00:00 returncode=0
+REMOTE_CHECK 1792466262.2102203 runner_alive True checkpoint_lines 381
+name, utilization.gpu [%], memory.used [MiB]
+NVIDIA L4, 100 %, 20456 MiB
+HEARTBEAT confirm completed 380 elapsed 7930.3
+RESULT confirm:hanoi:8:0:moves:0 correct 0 tokens 16384 reason no_json_move_list finish length elapsed 7934.45
+
+2026-10-20T03:22:22.164362+00:00 returncode=0
+REMOTE_CHECK 1792466531.2687318 runner_alive True checkpoint_lines 382
+name, utilization.gpu [%], memory.used [MiB]
+NVIDIA L4, 100 %, 20456 MiB
+HEARTBEAT confirm completed 382 elapsed 8171.84
+HEARTBEAT confirm completed 382 elapsed 8231.88
+
+2026-10-20T03:26:09.918273+00:00 returncode=0
+REMOTE_CHECK 1792466768.9520485 runner_alive True checkpoint_lines 383
+name, utilization.gpu [%], memory.used [MiB]
+NVIDIA L4, 100 %, 20456 MiB
+HEARTBEAT confirm completed 383 elapsed 8412.01
+HEARTBEAT confirm completed 383 elapsed 8472.02
+
+2026-10-20T03:29:44.251449+00:00 returncode=0
+REMOTE_CHECK 1792466983.2331827 runner_alive True checkpoint_lines 385
+name, utilization.gpu [%], memory.used [MiB]
+NVIDIA L4, 100 %, 20456 MiB
+RESULT confirm:hanoi:8:0:moves:4 correct 0 tokens 16384 reason no_json_move_list finish length elapsed 8623.38
+HEARTBEAT confirm completed 385 elapsed 8652.14
+
+2026-10-20T03:33:26.505487+00:00 returncode=0
+REMOTE_CHECK 1792467205.523416 runner_alive True checkpoint_lines 389
+name, utilization.gpu [%], memory.used [MiB]
+NVIDIA L4, 100 %, 20456 MiB
+RESULT confirm:hanoi:8:0:moves:8 correct 0 tokens 16384 reason no_json_move_list finish length elapsed 8865.49
+HEARTBEAT confirm completed 389 elapsed 8892.29
+
+2026-10-20T03:37:26.577043+00:00 returncode=0
+REMOTE_CHECK 1792467445.5577135 runner_alive True checkpoint_lines 390
+name, utilization.gpu [%], memory.used [MiB]
+NVIDIA L4, 100 %, 20456 MiB
+HEARTBEAT confirm completed 390 elapsed 9072.41
+HEARTBEAT confirm completed 390 elapsed 9132.41
+
+2026-10-20T03:41:00.347060+00:00 returncode=0
+REMOTE_CHECK 1792467649.5907066 runner_alive True checkpoint_lines 391
+name, utilization.gpu [%], memory.used [MiB]
+NVIDIA L4, 100 %, 20456 MiB
+HEARTBEAT confirm completed 391 elapsed 9312.53
+HEARTBEAT confirm completed 391 elapsed 9372.54
+
+2026-10-20T03:45:00.109544+00:00 returncode=0
+REMOTE_CHECK 1792467899.15896 runner_alive True checkpoint_lines 393
+name, utilization.gpu [%], memory.used [MiB]
+NVIDIA L4, 100 %, 20456 MiB
+RESULT confirm:hanoi:8:0:moves:12 correct 0 tokens 16384 reason no_json_move_list finish length elapsed 9604.54
+HEARTBEAT confirm completed 393 elapsed 9612.65
+
+2026-10-20T03:48:22.146966+00:00 returncode=0
+REMOTE_CHECK 1792468101.1766436 runner_alive True checkpoint_lines 395
+name, utilization.gpu [%], memory.used [MiB]
+NVIDIA L4, 100 %, 20456 MiB
+RESULT confirm:hanoi:8:0:moves:14 correct 0 tokens 16384 reason no_json_move_list finish length elapsed 9775.28
+HEARTBEAT confirm completed 395 elapsed 9792.75
+
+2026-10-20T03:51:45.642392+00:00 returncode=0
+REMOTE_CHECK 1792468304.642979 runner_alive True checkpoint_lines 398
+name, utilization.gpu [%], memory.used [MiB]
+NVIDIA L4, 100 %, 20456 MiB
+RESULT confirm:hanoi:8:0:moves:17 correct 0 tokens 16384 reason no_json_move_list finish length elapsed 9929.28
+HEARTBEAT confirm completed 398 elapsed 9974.68
+
+2026-10-20T03:56:36.241493+00:00 returncode=1
+
+2026-10-20T04:00:22.169568+00:00 returncode=0
+REMOTE_CHECK 1792468821.169536 runner_alive True checkpoint_lines 400
+name, utilization.gpu [%], memory.used [MiB]
+NVIDIA L4, 100 %, 20456 MiB
+HEARTBEAT confirm completed 400 elapsed 10454.99
+HEARTBEAT confirm completed 400 elapsed 10515.01
+
+2026-10-20T04:04:28.203650+00:00 returncode=0
+REMOTE_CHECK 1792469067.1843083 runner_alive True checkpoint_lines 403
+name, utilization.gpu [%], memory.used [MiB]
+NVIDIA L4, 100 %, 20456 MiB
+RESULT confirm:hanoi:8:0:moves:22 correct 0 tokens 16384 reason no_json_move_list finish length elapsed 10745.9
+HEARTBEAT confirm completed 403 elapsed 10755.12
+
+2026-10-20T04:08:11.215234+00:00 returncode=0
+REMOTE_CHECK 1792469290.1698744 runner_alive True checkpoint_lines 407
+name, utilization.gpu [%], memory.used [MiB]
+NVIDIA L4, 100 %, 20456 MiB
+RESULT confirm:hanoi:8:1:moves:1 correct 0 tokens 16384 reason no_json_move_list finish length elapsed 10994.13
+HEARTBEAT confirm completed 407 elapsed 10996.71
+
+2026-10-20T04:11:57.683188+00:00 returncode=0
+REMOTE_CHECK 1792469516.7093294 runner_alive True checkpoint_lines 408
+name, utilization.gpu [%], memory.used [MiB]
+NVIDIA L4, 100 %, 20456 MiB
+RESULT confirm:hanoi:8:1:moves:2 correct 0 tokens 16384 reason no_json_move_list finish length elapsed 11225.72
+HEARTBEAT confirm completed 408 elapsed 11236.93
+
+2026-10-20T04:16:04.756678+00:00 returncode=0
+REMOTE_CHECK 1792469753.884237 runner_alive True checkpoint_lines 409
+name, utilization.gpu [%], memory.used [MiB]
+NVIDIA L4, 100 %, 20456 MiB
+RESULT confirm:hanoi:8:1:moves:3 correct 0 tokens 16384 reason no_json_move_list finish length elapsed 11445.1
+HEARTBEAT confirm completed 409 elapsed 11477.13
+
+2026-10-20T04:20:47.119098+00:00 returncode=0
+REMOTE_CHECK 1792470045.3695767 runner_alive True checkpoint_lines 411
+name, utilization.gpu [%], memory.used [MiB]
+NVIDIA L4, 100 %, 20456 MiB
+HEARTBEAT confirm completed 410 elapsed 11717.34
+RESULT confirm:hanoi:8:1:moves:5 correct 0 tokens 16384 reason no_json_move_list finish length elapsed 11720.35
+
+2026-10-20T04:24:32.680211+00:00 returncode=0
+REMOTE_CHECK 1792470261.4190578 runner_alive True checkpoint_lines 414
+name, utilization.gpu [%], memory.used [MiB]
+NVIDIA L4, 100 %, 20456 MiB
+RESULT confirm:hanoi:8:1:moves:8 correct 0 tokens 16384 reason no_json_move_list finish length elapsed 11947.12
+HEARTBEAT confirm completed 414 elapsed 11957.57
+
+2026-10-20T04:28:04.110492+00:00 returncode=0
+REMOTE_CHECK 1792470481.3747199 runner_alive True checkpoint_lines 416
+name, utilization.gpu [%], memory.used [MiB]
+NVIDIA L4, 100 %, 20456 MiB
+HEARTBEAT confirm completed 416 elapsed 12139.96
+HEARTBEAT confirm completed 416 elapsed 12199.99
+
+2026-10-20T04:31:35.701222+00:00 returncode=0
+REMOTE_CHECK 1792470684.8544762 runner_alive True checkpoint_lines 417
+name, utilization.gpu [%], memory.used [MiB]
+NVIDIA L4, 100 %, 20456 MiB
+HEARTBEAT confirm completed 417 elapsed 12320.09
+HEARTBEAT confirm completed 417 elapsed 12380.12
+

@@ -1,0 +1,1 @@
+Original experiment-118 operational scripts, preserved for provenance only. DO NOT RUN: they refer to b9-118. The current run uses scripts/launch_remote.py, poll_once.py and watch.py, isolated to b10-118b. The analysis implementation is preserved in scripts/analyze.py and hypotheses.py; audit.py only changes the source of the old-record preservation check.

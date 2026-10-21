@@ -1,0 +1,1 @@
+Only N=25 cells are confirmatory. Partial-cell summaries describe completed responses and may be biased by completion time; they are excluded from publication plots and accuracy table.

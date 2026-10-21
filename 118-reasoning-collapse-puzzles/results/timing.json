@@ -1,0 +1,31 @@
+{
+  "estimated_minutes": {
+    "setup": 20,
+    "GPU_run": 65,
+    "eval": 10,
+    "writeup": 20,
+    "total": 115
+  },
+  "start_ist": "2026-10-18T23:14:55.450843+05:30",
+  "GPU": "NVIDIA L4 (23,034 MiB)",
+  "session_created_utc": "2026-10-18T17:45:18.795755+00:00",
+  "confirm_launch_utc": "2026-10-18T18:32:35+00:00",
+  "confirm_engine_ready_utc": "2026-10-18T18:36:51+00:00",
+  "timing_note": "Final per-stage wall intervals will include the recovery pause; article drafting overlaps GPU inference.",
+  "replacement_created_utc": "2026-10-18T19:29:15.182106+00:00",
+  "resume_engine_ready_utc": "2026-10-18T19:36:55+00:00",
+  "first_pilot_engine_ready_utc": "2026-10-18T17:50:22.065010+00:00",
+  "final_eval_start_utc": "2026-10-18T22:47:21.331980+00:00",
+  "final_eval_end_utc": "2026-10-18T22:47:24.853003+00:00",
+  "end_ist": "2026-10-19T04:18:31.729643+05:30",
+  "actual_minutes": 303.6,
+  "per_stage_minutes": {
+    "setup": 5.44,
+    "GPU_run": 296.99,
+    "eval": 0.06,
+    "writeup": 1.11
+  },
+  "stage_definitions": "Exclusive wall intervals: setup through first pilot engine ready; GPU_run through final evaluation start (includes model changes, recovery pauses, queue waits and overlapping drafting); eval through final audit/analysis completion; writeup through final artifact checks. These are elapsed stages, not GPU kernel timers.",
+  "CU_estimated": 4.484468533844445,
+  "CU_conservative_upper": 4.664832803111111
+}

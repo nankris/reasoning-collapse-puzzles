@@ -1,0 +1,18 @@
+{
+  "allocation1_versions": {
+    "vllm": "0.32.0",
+    "torch": "2.13.0",
+    "transformers": "5.18.0"
+  },
+  "allocation2_versions": {
+    "vllm": "0.32.0",
+    "torch": "2.13.0",
+    "transformers": "5.18.0"
+  },
+  "model_same": true,
+  "canonical_n10_tokens": [
+    4094,
+    4094
+  ],
+  "original_runner_puzzles_analysis_and_rules_unchanged": true
+}

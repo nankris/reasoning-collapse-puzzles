@@ -1,0 +1,238 @@
+
+PHASE LOG: pilot_run.txt
+START pilot Qwen/Qwen3-4B 1792345754.6387286
+(MainProcess pid=3836) INFO 10-18 17:49:14 [api_utils.py:286] non-default args: {'dtype': 'bfloat16', 'seed': 118, 'max_model_len': 20480, 'enable_prefix_caching': True, 'gpu_memory_utilization': 0.9, 'max_num_batched_tokens': 8192, 'max_num_seqs': 32, 'disable_log_stats': True, 'enforce_eager': True, 'model': 'Qwen/Qwen3-4B'}
+(MainProcess pid=3836) INFO 10-18 17:49:32 [model.py:733] Resolved architecture: Qwen3ForCausalLM
+(MainProcess pid=3836) INFO 10-18 17:49:32 [model.py:2152] Using max model len 20480
+(MainProcess pid=3836) INFO 10-18 17:49:32 [scheduler.py:307] Chunked prefill is enabled with max_num_batched_tokens=8192.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+
+Parse safetensors files:   0%|          | 0/3 [00:00<?, ?it/s]
+Parse safetensors files:  33%|███▎      | 1/3 [00:01<00:02,  1.25s/it]
+Parse safetensors files: 100%|██████████| 3/3 [00:01<00:00,  2.27it/s]
+(MainProcess pid=3836) WARNING 10-18 17:49:34 [vllm.py:1703] Enforce eager set, disabling torch.compile, CUDAGraphs, and JIT kernel warmup. This is equivalent to setting -cc.mode=none -cc.cudagraph_mode=none and --kernel_config.enable_jit_warmup=False
+(MainProcess pid=3836) WARNING 10-18 17:49:34 [vllm.py:1727] Inductor compilation was disabled by user settings, optimizations settings that are only active during inductor compilation will be ignored.
+(MainProcess pid=3836) INFO 10-18 17:49:34 [kernel.py:467] Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['vllm_c', 'native'], fused_add_rms_norm=['vllm_c', 'native'], gelu_and_mul_sparse=['triton', 'native'])
+(MainProcess pid=3836) INFO 10-18 17:49:34 [vllm.py:1929] Cudagraph is disabled under eager mode
+(MainProcess pid=3836) INFO 10-18 17:49:34 [compilation.py:317] Enabled custom fusions: norm_quant, act_quant
+
+Fetching 10 files:   0%|          | 0/10 [00:00<?, ?it/s]
+Fetching 10 files:  30%|███       | 3/10 [00:00<00:00, 11.84it/s]
+Fetching 10 files:  80%|████████  | 8/10 [00:00<00:00, 22.06it/s]
+Fetching 10 files: 100%|██████████| 10/10 [00:01<00:00,  6.67it/s]
+(EngineCore pid=4330) INFO 10-18 17:49:40 [core.py:133] Initializing a V1 LLM engine (v0.32.0) with config: model='Qwen/Qwen3-4B', speculative_config=None, tokenizer='Qwen/Qwen3-4B', skip_tokenizer_init=False, tokenizer_mode=auto, revision=main, tokenizer_revision=main, trust_remote_code=False, dtype=torch.bfloat16, max_seq_len=20480, download_dir=None, load_format=auto, tensor_parallel_size=1, pipeline_parallel_size=1, data_parallel_size=1, decode_context_parallel_size=1, dcp_comm_backend=ag_rs, disable_custom_all_reduce=False, quantization=None, quantization_config=None, enforce_eager=True, aux_output_config=AuxOutputConfig(enable_return_routed_experts=False, max_bytes=None), kv_cache_dtype=auto, device_config=cuda, structured_outputs_config=StructuredOutputsConfig(backend='auto', disable_any_whitespace=False, disable_additional_properties=False, reasoning_parser='', reasoning_parser_plugin='', enable_in_reasoning=False), observability_config=ObservabilityConfig(show_hidden_metrics_for_version=None, otlp_traces_endpoint=None, collect_detailed_traces=None, per_request_spec_decode_metrics='none', kv_cache_metrics=False, kv_cache_metrics_sample=0.01, custom_histogram_buckets=None, cudagraph_metrics=False, enable_layerwise_nvtx_tracing=False, enable_mfu_metrics=False, enable_mm_processor_stats=False, enable_logging_iteration_details=False, jit_monitor_mode='warn', jit_monitor_verbose=False), seed=118, served_model_name=Qwen/Qwen3-4B, enable_prefix_caching=True, enable_chunked_prefill=True, pooler_config=None, compilation_config={'mode': <CompilationMode.NONE: 0>, 'debug_dump_path': None, 'cache_dir': '', 'compile_cache_save_format': 'binary', 'backend': 'inductor', 'custom_ops': ['all'], 'ir_enable_torch_wrap': False, 'splitting_ops': [], 'compile_mm_encoder': False, 'cudagraph_mm_encoder': False, 'encoder_cudagraph_token_budgets': [], 'encoder_cudagraph_max_vision_items_per_batch': 0, 'encoder_cudagraph_max_frames_per_batch': None, 'cudagraph_decoder_replay': True, 'decoder_replay_cudagraph_capture_sizes': [], 'decoder_replay_trim_threshold': 768, 'compile_sizes': [], 'compile_ranges_endpoints': [8192], 'inductor_compile_config': {'enable_auto_functionalized_v2': False, 'combo_kernels': True, 'benchmark_combo_kernel': True}, 'inductor_passes': {}, 'cudagraph_mode': <CUDAGraphMode.NONE: 0>, 'cudagraph_num_of_warmups': 0, 'cudagraph_capture_sizes': [], 'cudagraph_copy_inputs': False, 'cudagraph_specialize_lora': True, 'use_inductor_graph_partition': False, 'pass_config': {'fuse_norm_quant': True, 'fuse_act_quant': True, 'fuse_attn_quant': False, 'fuse_allreduce_rms': False, 'enable_qk_norm_rope_fusion': False, 'fuse_rope_kvcache_cat_mla': False, 'fuse_act_padding': False, 'fuse_qk_norm_rope_kvcache': False}, 'max_cudagraph_capture_size': 0, 'dynamic_shapes_config': {'type': <DynamicShapesType.BACKED: 'backed'>, 'evaluate_guards': False, 'assume_32_bit_indexing': False}, 'local_cache_dir': None, 'fast_moe_cold_start': False, 'static_all_moe_layers': []}, kernel_config=KernelConfig(ir_op_priority=IrOpPriorityConfig(rms_norm=['vllm_c', 'native'], fused_add_rms_norm=['vllm_c', 'native'], gelu_and_mul_sparse=['triton', 'native']), enable_flashinfer_autotune=True, enable_rocm_segmented_attn_autotune=False, enable_cutedsl_warmup=True, enable_jit_warmup=False, moe_backend='auto', sparse_indexer_topk_backend='auto', linear_backend='auto', linear_backend_per_quant=None)
+(EngineCore pid=4330) INFO 10-18 17:49:41 [parallel_state.py:1906] world_size=1 rank=0 local_rank=0 distributed_init_method=file:///tmp/vllm_dist_cc083f8d537648f483f60cdc7917bc09 backend=nccl
+(EngineCore pid=4330) INFO 10-18 17:49:42 [parallel_state.py:2350] rank 0 in world size 1 is assigned as DP rank 0, PP rank 0, PCP rank 0, TP rank 0, ETP rank 0, EP rank N/A, EPLB rank N/A
+(EngineCore pid=4330) INFO 10-18 17:49:42 [gpu_worker.py:518] Using V2 Model Runner
+(EngineCore pid=4330) INFO 10-18 17:49:43 [model_runner.py:392] Loading model from scratch...
+(EngineCore pid=4330) INFO 10-18 17:49:44 [cuda.py:506] Using FLASH_ATTN attention backend out of potential backends: ['FLASH_ATTN', 'FLASHINFER', 'TRITON_ATTN', 'FLEX_ATTENTION'].
+(EngineCore pid=4330) INFO 10-18 17:49:44 [flash_attn.py:1117] Using FlashAttention version 2
+(EngineCore pid=4330) INFO 10-18 17:49:44 [base_loader.py:82] Initializing model took 1.568126 seconds
+(EngineCore pid=4330) INFO 10-18 17:50:09 [weight_utils.py:532] Time spent downloading weights for Qwen/Qwen3-4B: 23.781438 seconds
+(EngineCore pid=4330) INFO 10-18 17:50:09 [weight_utils.py:1108] Filesystem type for checkpoints: OVERLAY. Checkpoint size: 7.49 GiB. Available RAM: 48.72 GiB.
+(EngineCore pid=4330) INFO 10-18 17:50:09 [weight_utils.py:1131] Auto-prefetch is disabled because the filesystem (OVERLAY) is not a recognized network FS (NFS/Lustre). If you want to force prefetching, start vLLM with --safetensors-load-strategy=prefetch.
+
+Loading safetensors checkpoint shards:   0% Completed | 0/3 [00:00<?, ?it/s]
+
+Loading safetensors checkpoint shards:  33% Completed | 1/3 [00:01<00:02,  1.12s/it]
+
+Loading safetensors checkpoint shards:  67% Completed | 2/3 [00:02<00:01,  1.19s/it]
+
+Loading safetensors checkpoint shards: 100% Completed | 3/3 [00:02<00:00,  1.43it/s]
+
+META {"model": "Qwen/Qwen3-4B", "phase": "pilot", "time": 1792345822.0650096, "canonical_n10_tokens": 4094, "versions": "Name: vllm\nVersion: 0.32.0\nSummary: A high-throughput and memory-efficient inference and serving engine for LLMs\nHome-page: https://github.com/vllm-project/vllm\nAuthor: vLLM Team\nAuthor-email: \nLicense: \nLocation: /usr/local/lib/python3.13/dist-packages\nRequires: aiohttp, anthropic, apache-tvm-ffi, blake3, cachetools, cbor2, cloudpickle, compressed-tensors, depyf, einops, fastapi, fastsafetensors, filelock, flashinfer-python, huggingface_hub, humming-kernels, ijson, instanttensor, jsonschema, lark, llguidance, lm-format-enforcer, mcp, mistral_common, model-hosting-container-standards, msgspec, ninja, numba, numpy, nvidia-cudnn-frontend, nvidia-cutlass-dsl, nvtx, openai, opencv-python-headless, opentelemetry-api, opentelemetry-exporter-otlp, opentelemetry-sdk, opentelemetry-semantic-conventions-ai, oss-harmony, outlines_core, partial-json-parser, pillow, prometheus-fastapi-instrumentator, prometheus_client, protobuf, psutil, py-cpuinfo, pybase64, pydantic, PyNvVideoCodec, python-json-logger, pyyaml, pyzmq, quack-kernels, regex, requests, safetensors, sentencepiece, setproctitle, setuptools, six, starlette, tiktoken, tilelang, tokenizers, tokenspeed-mla, torch, torchaudio, torchcodec, torchvision, tqdm, transformers, typing_extensions, watchfiles, xgrammar\nRequired-by: \n---\nName: torch\nVersion: 2.13.0\nSummary: Tensors and Dynamic neural networks in Python with strong GPU acceleration\nHome-page: https://pytorch.org\nAuthor: \nAuthor-email: PyTorch Team <packages@pytorch.org>\nLicense: \nLocation: /usr/local/lib/python3.13/dist-packages\nRequires: cuda-bindings, cuda-toolkit, filelock, fsspec, jinja2, networkx, nvidia-cudnn-cu13, nvidia-cusparselt-cu13, nvidia-nccl-cu13, nvidia-nvshmem-cu13, setuptools, sympy, triton, typing-extensions\nRequired-by: accelerate, compressed-tensors, fastai, flashinfer-python, humming-kernels, instanttensor, peft, quack-kernels, sentence-transformers, tilelang, timm, tokenspeed-mla, torch_c_dlpack_ext, torchdata, torchvision, vllm, xgrammar\n---\nName: transformers\nVersion: 5.18.0\nSummary: Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training.\nHome-page: https://github.com/huggingface/transformers\nAuthor: The Hugging Face team (past and future) with the help of all our contributors (https://github.com/huggingface/transformers/graphs/contributors)\nAuthor-email: transformers@huggingface.co\nLicense: Apache 2.0 License\nLocation: /usr/local/lib/python3.13/dist-packages\nRequires: huggingface-hub, numpy, packaging, pyyaml, regex, safetensors, tokenizers, tqdm, typer\nRequired-by: compressed-tensors, peft, sentence-transformers, vllm, xgrammar", "gpu": "Sun Oct 18 17:50:25 2026       \n+-----------------------------------------------------------------------------------------+\n| NVIDIA-SMI 580.82.07              Driver Version: 580.82.07      CUDA Version: 13.0     |\n+-----------------------------------------+------------------------+----------------------+\n| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |\n| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |\n|                                         |                        |               MIG M. |\n|=========================================+========================+======================|\n|   0  NVIDIA L4                      Off |   00000000:00:03.0 Off |                    0 |\n| N/A   43C    P0             28W /   72W |   19884MiB /  23034MiB |      0%      Default |\n|                                         |                        |                  N/A |\n+-----------------------------------------+------------------------+----------------------+\n\n+-----------------------------------------------------------------------------------------+\n| Processes:                                                                              |\n|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |\n|        ID   ID                                                               Usage      |\n|=========================================================================================|\n|    0   N/A  N/A            4330      C   VLLM::EngineCore                      19876MiB |\n+-----------------------------------------------------------------------------------------+"}
+
+PHASE LOG: confirm_run.txt
+solved finish stop elapsed 299.01
+HEARTBEAT confirm completed 203 elapsed 300.13
+RESULT confirm:hanoi:3:1:moves:19 correct 1 tokens 1255 reason solved finish stop elapsed 300.54
+RESULT confirm:hanoi:3:1:moves:9 correct 1 tokens 1741 reason solved finish stop elapsed 304.46
+RESULT confirm:hanoi:3:1:moves:8 correct 1 tokens 1821 reason solved finish stop elapsed 304.88
+RESULT confirm:hanoi:3:1:moves:14 correct 1 tokens 1704 reason solved finish stop elapsed 313.94
+RESULT confirm:hanoi:3:1:moves:15 correct 1 tokens 1668 reason solved finish stop elapsed 314.8
+RESULT confirm:hanoi:3:1:moves:12 correct 1 tokens 1908 reason solved finish stop elapsed 317.19
+RESULT confirm:hanoi:3:1:moves:21 correct 1 tokens 1424 reason solved finish stop elapsed 319.06
+RESULT confirm:hanoi:3:1:moves:18 correct 1 tokens 1650 reason solved finish stop elapsed 319.84
+RESULT confirm:hanoi:3:1:moves:16 correct 1 tokens 1741 reason solved finish stop elapsed 322.49
+RESULT confirm:hanoi:3:1:moves:13 correct 1 tokens 2113 reason solved finish stop elapsed 330.58
+RESULT confirm:hanoi:3:1:moves:0 correct 1 tokens 2663 reason solved finish stop elapsed 334.22
+RESULT confirm:hanoi:3:1:moves:17 correct 1 tokens 1993 reason solved finish stop elapsed 336.69
+RESULT confirm:hanoi:3:1:moves:6 correct 1 tokens 2776 reason solved finish stop elapsed 344.22
+RESULT confirm:hanoi:3:1:moves:23 correct 1 tokens 1767 reason solved finish stop elapsed 344.81
+RESULT confirm:hanoi:9:1:program:22 correct 1 tokens 5213 reason solved finish stop elapsed 346.46
+HEARTBEAT confirm completed 218 elapsed 360.16
+RESULT confirm:hanoi:3:1:moves:24 correct 1 tokens 2085 reason solved finish stop elapsed 368.67
+RESULT confirm:hanoi:5:0:moves:0 correct 0 tokens 123 reason larger_on_smaller finish stop elapsed 375.9
+RESULT confirm:hanoi:3:1:moves:7 correct 1 tokens 3264 reason solved finish stop elapsed 380.08
+RESULT confirm:hanoi:5:0:moves:1 correct 0 tokens 123 reason larger_on_smaller finish stop elapsed 383.37
+RESULT confirm:hanoi:5:0:moves:2 correct 0 tokens 123 reason larger_on_smaller finish stop elapsed 387.56
+RESULT confirm:hanoi:5:0:moves:3 correct 0 tokens 123 reason larger_on_smaller finish stop elapsed 390.98
+RESULT confirm:hanoi:5:0:moves:4 correct 0 tokens 123 reason larger_on_smaller finish stop elapsed 395.31
+RESULT confirm:hanoi:5:0:moves:5 correct 0 tokens 123 reason larger_on_smaller finish stop elapsed 398.86
+RESULT confirm:hanoi:3:1:moves:10 correct 1 tokens 3456 reason solved finish stop elapsed 403.36
+RESULT confirm:hanoi:5:0:moves:6 correct 0 tokens 133 reason bad_move_format finish stop elapsed 404.06
+RESULT confirm:hanoi:5:0:moves:7 correct 0 tokens 123 reason larger_on_smaller finish stop elapsed 406.99
+RESULT confirm:hanoi:5:0:moves:9 correct 0 tokens 119 reason larger_on_smaller finish stop elapsed 411.91
+RESULT confirm:hanoi:9:1:program:17 correct 1 tokens 6455 reason solved finish stop elapsed 412.97
+RESULT confirm:hanoi:5:0:moves:8 correct 0 tokens 143 reason larger_on_smaller finish stop elapsed 412.97
+RESULT confirm:hanoi:5:0:moves:10 correct 0 tokens 123 reason larger_on_smaller finish stop elapsed 415.1
+RESULT confirm:hanoi:3:1:moves:20 correct 1 tokens 3201 reason solved finish stop elapsed 416.6
+RESULT confirm:hanoi:5:0:moves:11 correct 0 tokens 127 reason bad_peg finish stop elapsed 419.89
+HEARTBEAT confirm completed 235 elapsed 420.19
+RESULT confirm:hanoi:5:0:moves:12 correct 0 tokens 123 reason larger_on_smaller finish stop elapsed 420.55
+RESULT confirm:hanoi:5:0:moves:14 correct 0 tokens 123 reason larger_on_smaller finish stop elapsed 422.7
+RESULT confirm:hanoi:5:0:moves:15 correct 0 tokens 123 reason empty_source finish stop elapsed 424.21
+RESULT confirm:hanoi:5:0:moves:16 correct 0 tokens 135 reason larger_on_smaller finish stop elapsed 428.34
+RESULT confirm:hanoi:5:0:moves:17 correct 0 tokens 135 reason larger_on_smaller finish stop elapsed 429.03
+RESULT confirm:hanoi:5:0:moves:18 correct 0 tokens 123 reason larger_on_smaller finish stop elapsed 430.52
+RESULT confirm:hanoi:5:0:moves:19 correct 0 tokens 123 reason larger_on_smaller finish stop elapsed 432.08
+RESULT confirm:hanoi:5:0:moves:20 correct 0 tokens 123 reason larger_on_smaller finish stop elapsed 436.35
+RESULT confirm:hanoi:5:0:moves:22 correct 0 tokens 123 reason larger_on_smaller finish stop elapsed 438.52
+RESULT confirm:hanoi:5:0:moves:24 correct 0 tokens 123 reason bad_peg finish stop elapsed 444.43
+RESULT confirm:hanoi:3:1:moves:22 correct 1 tokens 3801 reason solved finish stop elapsed 462.78
+HEARTBEAT confirm completed 246 elapsed 480.19
+RESULT confirm:hanoi:4:1:moves:5 correct 1 tokens 3649 reason solved finish stop elapsed 511.68
+RESULT confirm:hanoi:4:1:moves:8 correct 1 tokens 3744 reason solved finish stop elapsed 533.9
+RESULT confirm:hanoi:4:1:moves:9 correct 1 tokens 3717 reason solved finish stop elapsed 535.26
+HEARTBEAT confirm completed 249 elapsed 540.21
+RESULT confirm:hanoi:4:1:moves:0 correct 1 tokens 4205 reason solved finish stop elapsed 553.33
+RESULT confirm:hanoi:4:1:moves:19 correct 1 tokens 3320 reason solved finish stop elapsed 554.94
+RESULT confirm:hanoi:4:1:moves:16 correct 1 tokens 3561 reason solved finish stop elapsed 556.78
+RESULT confirm:hanoi:4:1:moves:3 correct 1 tokens 4280 reason solved finish stop elapsed 565.54
+HEARTBEAT confirm completed 253 elapsed 600.27
+RESULT confirm:hanoi:4:1:moves:1 correct 1 tokens 4757 reason solved finish stop elapsed 601.43
+RESULT confirm:hanoi:4:1:moves:10 correct 1 tokens 4618 reason solved finish stop elapsed 612.0
+RESULT confirm:hanoi:4:1:moves:13 correct 1 tokens 4435 reason solved finish stop elapsed 619.59
+RESULT confirm:hanoi:4:1:moves:12 correct 1 tokens 4722 reason solved finish stop elapsed 629.17
+RESULT confirm:hanoi:4:1:moves:14 correct 1 tokens 4614 reason solved finish stop elapsed 636.37
+RESULT confirm:hanoi:4:1:moves:2 correct 1 tokens 5198 reason solved finish stop elapsed 640.94
+RESULT confirm:hanoi:4:1:moves:20 correct 1 tokens 4503 reason solved finish stop elapsed 656.65
+HEARTBEAT confirm completed 260 elapsed 660.31
+RESULT confirm:hanoi:4:1:moves:4 correct 1 tokens 5553 reason solved finish stop elapsed 668.47
+RESULT confirm:hanoi:4:1:moves:21 correct 1 tokens 5142 reason solved finish stop elapsed 710.03
+HEARTBEAT confirm completed 262 elapsed 720.34
+RESULT confirm:hanoi:4:1:moves:22 correct 1 tokens 5233 reason solved finish stop elapsed 730.04
+HEARTBEAT confirm completed 263 elapsed 780.42
+RESULT confirm:hanoi:4:1:moves:18 correct 1 tokens 6382 reason solved finish stop elapsed 789.24
+RESULT confirm:hanoi:4:1:moves:23 correct 1 tokens 6272 reason solved finish stop elapsed 815.61
+HEARTBEAT confirm completed 265 elapsed 840.46
+HEARTBEAT confirm completed 265 elapsed 900.48
+RESULT confirm:hanoi:4:1:moves:17 correct 1 tokens 7876 reason solved finish stop elapsed 904.65
+RESULT confirm:hanoi:4:1:moves:11 correct 1 tokens 8179 reason solved finish stop elapsed 907.62
+RESULT confirm:hanoi:4:1:moves:7 correct 1 tokens 8497 reason solved finish stop elapsed 923.28
+HEARTBEAT confirm completed 268 elapsed 960.52
+RESULT confirm:hanoi:4:1:moves:6 correct 1 tokens 9316 reason solved finish stop elapsed 978.93
+RESULT confirm:hanoi:4:1:moves:24 correct 1 tokens 8543 reason solved finish stop elapsed 1004.99
+HEARTBEAT confirm completed 270 elapsed 1020.58
+HEARTBEAT confirm completed 270 elapsed 1080.58
+HEARTBEAT confirm completed 270 elapsed 1140.65
+RESULT confirm:hanoi:5:1:moves:1 correct 0 tokens 8255 reason larger_on_smaller finish stop elapsed 1154.97
+HEARTBEAT confirm completed 271 elapsed 1200.68
+RESULT confirm:hanoi:4:1:moves:15 correct 1 tokens 11916 reason solved finish stop elapsed 1219.96
+RESULT confirm:hanoi:5:1:moves:2 correct 0 tokens 8753 reason larger_on_smaller finish stop elapsed 1230.15
+HEARTBEAT confirm completed 273 elapsed 1260.74
+RESULT confirm:hanoi:5:1:moves:4 correct 1 tokens 8580 reason solved finish stop elapsed 1312.06
+HEARTBEAT confirm completed 274 elapsed 1320.77
+HEARTBEAT confirm completed 274 elapsed 1380.81
+HEARTBEAT confirm completed 274 elapsed 1440.81
+RESULT confirm:hanoi:4:0:moves:1 correct 0 tokens 16384 reason no_json_move_list finish length elapsed 1482.59
+RESULT confirm:hanoi:5:1:moves:6 correct 1 tokens 7362 reason solved finish stop elapsed 1499.09
+HEARTBEAT confirm completed 276 elapsed 1501.51
+HEARTBEAT confirm completed 276 elapsed 1561.54
+HEARTBEAT confirm completed 276 elapsed 1621.6
+HEARTBEAT confirm completed 276 elapsed 1681.62
+RESULT confirm:hanoi:5:0:moves:13 correct 0 tokens 16384 reason no_json_move_list finish length elapsed 1696.06
+RESULT confirm:hanoi:5:0:moves:21 correct 0 tokens 16384 reason no_json_move_list finish length elapsed 1725.95
+HEARTBEAT confirm completed 278 elapsed 1741.69
+RESULT confirm:hanoi:5:0:moves:23 correct 0 tokens 16384 reason no_json_move_list finish length elapsed 1743.22
+RESULT confirm:hanoi:5:1:moves:0 correct 0 tokens 16384 reason no_json_move_list finish length elapsed 1763.72
+HEARTBEAT confirm completed 280 elapsed 1801.77
+
+PHASE LOG: resume_run.txt
+META {"model": "Qwen/Qwen3-8B-AWQ", "phase": "confirm", "time": 1792352211.343592, "canonical_n10_tokens": 4094, "versions": "Name: vllm\nVersion: 0.32.0\nSummary: A high-throughput and memory-efficient inference and serving engine for LLMs\nHome-page: https://github.com/vllm-project/vllm\nAuthor: vLLM Team\nAuthor-email: \nLicense: \nLocation: /usr/local/lib/python3.13/dist-packages\nRequires: aiohttp, anthropic, apache-tvm-ffi, blake3, cachetools, cbor2, cloudpickle, compressed-tensors, depyf, einops, fastapi, fastsafetensors, filelock, flashinfer-python, huggingface_hub, humming-kernels, ijson, instanttensor, jsonschema, lark, llguidance, lm-format-enforcer, mcp, mistral_common, model-hosting-container-standards, msgspec, ninja, numba, numpy, nvidia-cudnn-frontend, nvidia-cutlass-dsl, nvtx, openai, opencv-python-headless, opentelemetry-api, opentelemetry-exporter-otlp, opentelemetry-sdk, opentelemetry-semantic-conventions-ai, oss-harmony, outlines_core, partial-json-parser, pillow, prometheus-fastapi-instrumentator, prometheus_client, protobuf, psutil, py-cpuinfo, pybase64, pydantic, PyNvVideoCodec, python-json-logger, pyyaml, pyzmq, quack-kernels, regex, requests, safetensors, sentencepiece, setproctitle, setuptools, six, starlette, tiktoken, tilelang, tokenizers, tokenspeed-mla, torch, torchaudio, torchcodec, torchvision, tqdm, transformers, typing_extensions, watchfiles, xgrammar\nRequired-by: \n---\nName: torch\nVersion: 2.13.0\nSummary: Tensors and Dynamic neural networks in Python with strong GPU acceleration\nHome-page: https://pytorch.org\nAuthor: \nAuthor-email: PyTorch Team <packages@pytorch.org>\nLicense: \nLocation: /usr/local/lib/python3.13/dist-packages\nRequires: cuda-bindings, cuda-toolkit, filelock, fsspec, jinja2, networkx, nvidia-cudnn-cu13, nvidia-cusparselt-cu13, nvidia-nccl-cu13, nvidia-nvshmem-cu13, setuptools, sympy, triton, typing-extensions\nRequired-by: accelerate, compressed-tensors, fastai, flashinfer-python, humming-kernels, instanttensor, peft, quack-kernels, sentence-transformers, tilelang, timm, tokenspeed-mla, torch_c_dlpack_ext, torchdata, torchvision, vllm, xgrammar\n---\nName: transformers\nVersion: 5.18.0\nSummary: Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training.\nHome-page: https://github.com/huggingface/transformers\nAuthor: The Hugging Face team (past and future) with the help of all our contributors (https://github.com/huggingface/transformers/graphs/contributors)\nAuthor-email: transformers@huggingface.co\nLicense: Apache 2.0 License\nLocation: /usr/local/lib/python3.13/dist-packages\nRequires: huggingface-hub, numpy, packaging, pyyaml, regex, safetensors, tokenizers, tqdm, typer\nRequired-by: compressed-tensors, peft, sentence-transformers, vllm, xgrammar", "gpu": "Sun Oct 18 19:36:54 2026       \n+-----------------------------------------------------------------------------------------+\n| NVIDIA-SMI 580.82.07              Driver Version: 580.82.07      CUDA Version: 13.0     |\n+-----------------------------------------+------------------------+----------------------+\n| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |\n| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |\n|                                         |                        |               MIG M. |\n|=========================================+========================+======================|\n|   0  NVIDIA L4                      Off |   00000000:00:03.0 Off |                    0 |\n| N/A   77C    P0             36W /   72W |   19194MiB /  23034MiB |      0%      Default |\n|                                         |                        |                  N/A |\n+-----------------------------------------+------------------------+----------------------+\n\n+-----------------------------------------------------------------------------------------+\n| Processes:                                                                              |\n|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |\n|        ID   ID                                                               Usage      |\n|=========================================================================================|\n|    0   N/A  N/A            2540      C   VLLM::EngineCore                      19186MiB |\n+-----------------------------------------------------------------------------------------+", "runner": "streaming engine; request-level checkpoints"}
+HEARTBEAT confirm completed 280 elapsed 60.02
+HEARTBEAT confirm completed 280 elapsed 120.03
+HEARTBEAT confirm completed 280 elapsed 180.07
+HEARTBEAT confirm completed 280 elapsed 240.07
+HEARTBEAT confirm completed 280 elapsed 300.08
+HEARTBEAT confirm completed 280 elapsed 360.09
+HEARTBEAT confirm completed 280 elapsed 420.13
+HEARTBEAT confirm completed 280 elapsed 480.13
+HEARTBEAT confirm completed 280 elapsed 540.17
+HEARTBEAT confirm completed 280 elapsed 600.18
+HEARTBEAT confirm completed 280 elapsed 660.19
+HEARTBEAT confirm completed 280 elapsed 720.21
+RESULT confirm:hanoi:10:0:moves:0 correct 0 tokens 16384 reason no_json_move_list finish length elapsed 757.48
+RESULT confirm:hanoi:10:0:moves:1 correct 0 tokens 16384 reason no_json_move_list finish length elapsed 757.54
+RESULT confirm:hanoi:10:0:moves:2 correct 0 tokens 16384 reason no_json_move_list finish length elapsed 757.56
+RESULT confirm:hanoi:10:0:moves:3 correct 0 tokens 16384 reason no_json_move_list finish length elapsed 757.58
+RESULT confirm:hanoi:10:0:moves:4 correct 0 tokens 16384 reason no_json_move_list finish length elapsed 757.6
+HEARTBEAT confirm completed 285 elapsed 780.23
+HEARTBEAT confirm completed 285 elapsed 840.25
+
+PHASE LOG: resume32_run.txt
+META {"model": "Qwen/Qwen3-8B-AWQ", "phase": "confirm", "time": 1792353223.7654505, "canonical_n10_tokens": 4094, "versions": "Name: vllm\nVersion: 0.32.0\nSummary: A high-throughput and memory-efficient inference and serving engine for LLMs\nHome-page: https://github.com/vllm-project/vllm\nAuthor: vLLM Team\nAuthor-email: \nLicense: \nLocation: /usr/local/lib/python3.13/dist-packages\nRequires: aiohttp, anthropic, apache-tvm-ffi, blake3, cachetools, cbor2, cloudpickle, compressed-tensors, depyf, einops, fastapi, fastsafetensors, filelock, flashinfer-python, huggingface_hub, humming-kernels, ijson, instanttensor, jsonschema, lark, llguidance, lm-format-enforcer, mcp, mistral_common, model-hosting-container-standards, msgspec, ninja, numba, numpy, nvidia-cudnn-frontend, nvidia-cutlass-dsl, nvtx, openai, opencv-python-headless, opentelemetry-api, opentelemetry-exporter-otlp, opentelemetry-sdk, opentelemetry-semantic-conventions-ai, oss-harmony, outlines_core, partial-json-parser, pillow, prometheus-fastapi-instrumentator, prometheus_client, protobuf, psutil, py-cpuinfo, pybase64, pydantic, PyNvVideoCodec, python-json-logger, pyyaml, pyzmq, quack-kernels, regex, requests, safetensors, sentencepiece, setproctitle, setuptools, six, starlette, tiktoken, tilelang, tokenizers, tokenspeed-mla, torch, torchaudio, torchcodec, torchvision, tqdm, transformers, typing_extensions, watchfiles, xgrammar\nRequired-by: \n---\nName: torch\nVersion: 2.13.0\nSummary: Tensors and Dynamic neural networks in Python with strong GPU acceleration\nHome-page: https://pytorch.org\nAuthor: \nAuthor-email: PyTorch Team <packages@pytorch.org>\nLicense: \nLocation: /usr/local/lib/python3.13/dist-packages\nRequires: cuda-bindings, cuda-toolkit, filelock, fsspec, jinja2, networkx, nvidia-cudnn-cu13, nvidia-cusparselt-cu13, nvidia-nccl-cu13, nvidia-nvshmem-cu13, setuptools, sympy, triton, typing-extensions\nRequired-by: accelerate, compressed-tensors, fastai, flashinfer-python, humming-kernels, instanttensor, peft, quack-kernels, sentence-transformers, tilelang, timm, tokenspeed-mla, torch_c_dlpack_ext, torchdata, torchvision, vllm, xgrammar\n---\nName: transformers\nVersion: 5.18.0\nSummary: Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training.\nHome-page: https://github.com/huggingface/transformers\nAuthor: The Hugging Face team (past and future) with the help of all our contributors (https://github.com/huggingface/transformers/graphs/contributors)\nAuthor-email: transformers@huggingface.co\nLicense: Apache 2.0 License\nLocation: /usr/local/lib/python3.13/dist-packages\nRequires: huggingface-hub, numpy, packaging, pyyaml, regex, safetensors, tokenizers, tqdm, typer\nRequired-by: compressed-tensors, peft, sentence-transformers, vllm, xgrammar", "gpu": "Sun Oct 18 19:53:47 2026       \n+-----------------------------------------------------------------------------------------+\n| NVIDIA-SMI 580.82.07              Driver Version: 580.82.07      CUDA Version: 13.0     |\n+-----------------------------------------+------------------------+----------------------+\n| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |\n| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |\n|                                         |                        |               MIG M. |\n|=========================================+========================+======================|\n|   0  NVIDIA L4                      Off |   00000000:00:03.0 Off |                    0 |\n| N/A   78C    P0             36W /   72W |   19194MiB /  23034MiB |      0%      Default |\n|                                         |                        |                  N/A |\n+-----------------------------------------+------------------------+----------------------+\n\n+-----------------------------------------------------------------------------------------+\n| Processes:                                                                              |\n|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |\n|        ID   ID                                                               Usage      |\n|=========================================================================================|\n|    0   N/A  N/A            7571      C   VLLM::EngineCore                      19186MiB |\n+-----------------------------------------------------------------------------------------+", "runner": "streaming engine; request-level checkpoints"}
+HEARTBEAT confirm completed 285 elapsed 60.04
+HEARTBEAT confirm completed 285 elapsed 120.07
+HEARTBEAT confirm completed 285 elapsed 180.1
+HEARTBEAT confirm completed 285 elapsed 240.11
+HEARTBEAT confirm completed 285 elapsed 300.17
+HEARTBEAT confirm completed 285 elapsed 360.21
+HEARTBEAT confirm completed 285 elapsed 420.27
+HEARTBEAT confirm completed 285 elapsed 480.3
+HEARTBEAT confirm completed 285 elapsed 540.31
+HEARTBEAT confirm completed 285 elapsed 600.33
+HEARTBEAT confirm completed 285 elapsed 660.35
+HEARTBEAT confirm completed 285 elapsed 720.42
+HEARTBEAT confirm completed 285 elapsed 780.43
+HEARTBEAT confirm completed 285 elapsed 840.5
+HEARTBEAT confirm completed 285 elapsed 900.51
+
+FINAL SESSION AND COST AUDIT
+{
+  "reason": "Both named allocations pruned; no active session at final resume. Insufficient remaining budget to complete 465 missing outputs after another setup.",
+  "records": 285,
+  "time_utc": "2026-10-18T22:47:21.020288+00:00",
+  "allocations": [
+    {
+      "created_utc": "2026-10-18T17:45:18.795755+00:00",
+      "terminated_utc": "2026-10-18T19:22:58.595144+00:00",
+      "reason": "pruned",
+      "hours": 1.6277220525
+    },
+    {
+      "created_utc": "2026-10-18T19:29:15.098539+00:00",
+      "terminated_utc": "2026-10-18T20:46:18.472346+00:00",
+      "reason": "pruned",
+      "hours": 1.2842705019444445
+    }
+  ],
+  "estimated_CU": 4.484468533844445,
+  "conservative_upper_CU": 4.664832803111111,
+  "rate_CU_per_hour": 1.54,
+  "stop_output": "colab stop -s b9-118: Session 'b9-118' not found.",
+  "usage_after": "119.06 CU balance; 0.00 CU/hour; 0 active assignments",
+  "cost_note": "Estimate counts entire allocations through prune events, including unsaved generation; not a per-experiment invoice."
+}
+
+SAVED NVIDIA-SMI
+Sun Oct 18 18:36:51 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 580.82.07              Driver Version: 580.82.07      CUDA Version: 13.0     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA L4                      Off |   00000000:00:03.0 Off |                    0 |
+| N/A   54C    P0             30W /   72W |   19194MiB /  23034MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|    0   N/A  N/A           15601      C   VLLM::EngineCore                      19186MiB |
++-----------------------------------------------------------------------------------------+

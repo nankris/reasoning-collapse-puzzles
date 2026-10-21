@@ -1,0 +1,7 @@
+commit ba49376d0bbb05e574ef511c77f7a1b224656def
+Author:     codex_hari <codex_hari@local>
+AuthorDate: Sun Oct 18 18:17:15 2026 +0000
+Commit:     codex_hari <codex_hari@local>
+CommitDate: Sun Oct 18 18:17:15 2026 +0000
+
+    Freeze four hypotheses and exact thresholds before fresh 8B confirmation

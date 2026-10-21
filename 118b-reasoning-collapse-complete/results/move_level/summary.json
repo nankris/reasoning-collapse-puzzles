@@ -1,0 +1,283 @@
+[
+  {
+    "n": 3,
+    "thinking": false,
+    "responses": 25,
+    "correct": 0,
+    "capped": 0,
+    "cap_in_thinking": 0,
+    "required_moves": 7,
+    "median_moves_emitted": 7.0,
+    "median_valid_prefix": 7.0,
+    "max_valid_prefix": 7,
+    "median_optimal_prefix": 0.0,
+    "median_valid_fraction": 1.0,
+    "stop_reasons": {
+      "empty_source": 6,
+      "ran_out": 14,
+      "larger_on_smaller": 4,
+      "unknown_peg": 1
+    },
+    "looping": 0,
+    "loop_periods": {}
+  },
+  {
+    "n": 3,
+    "thinking": true,
+    "responses": 25,
+    "correct": 25,
+    "capped": 0,
+    "cap_in_thinking": 0,
+    "required_moves": 7,
+    "median_moves_emitted": 7.0,
+    "median_valid_prefix": 7.0,
+    "max_valid_prefix": 7,
+    "median_optimal_prefix": 7.0,
+    "median_valid_fraction": 1.0,
+    "stop_reasons": {
+      "solved": 25
+    },
+    "looping": 0,
+    "loop_periods": {}
+  },
+  {
+    "n": 4,
+    "thinking": false,
+    "responses": 25,
+    "correct": 0,
+    "capped": 1,
+    "cap_in_thinking": 0,
+    "required_moves": 15,
+    "median_moves_emitted": 15.0,
+    "median_valid_prefix": 4.0,
+    "max_valid_prefix": 13,
+    "median_optimal_prefix": 4.0,
+    "median_valid_fraction": 0.26666666666666666,
+    "stop_reasons": {
+      "larger_on_smaller": 18,
+      "empty_source": 6,
+      "unknown_peg": 1
+    },
+    "looping": 1,
+    "loop_periods": {
+      "5": 1
+    }
+  },
+  {
+    "n": 4,
+    "thinking": true,
+    "responses": 25,
+    "correct": 25,
+    "capped": 0,
+    "cap_in_thinking": 0,
+    "required_moves": 15,
+    "median_moves_emitted": 15.0,
+    "median_valid_prefix": 15.0,
+    "max_valid_prefix": 15,
+    "median_optimal_prefix": 15.0,
+    "median_valid_fraction": 1.0,
+    "stop_reasons": {
+      "solved": 25
+    },
+    "looping": 0,
+    "loop_periods": {}
+  },
+  {
+    "n": 5,
+    "thinking": false,
+    "responses": 25,
+    "correct": 0,
+    "capped": 3,
+    "cap_in_thinking": 0,
+    "required_moves": 31,
+    "median_moves_emitted": 30.0,
+    "median_valid_prefix": 4.0,
+    "max_valid_prefix": 13,
+    "median_optimal_prefix": 0.0,
+    "median_valid_fraction": 0.12903225806451613,
+    "stop_reasons": {
+      "larger_on_smaller": 22,
+      "unknown_peg": 2,
+      "empty_source": 1
+    },
+    "looping": 19,
+    "loop_periods": {
+      "3": 16,
+      "9": 2,
+      "4": 1
+    }
+  },
+  {
+    "n": 5,
+    "thinking": true,
+    "responses": 5,
+    "correct": 2,
+    "capped": 1,
+    "cap_in_thinking": 1,
+    "required_moves": 31,
+    "median_moves_emitted": 31.0,
+    "median_valid_prefix": 20.0,
+    "max_valid_prefix": 31,
+    "median_optimal_prefix": 20.0,
+    "median_valid_fraction": 0.6451612903225806,
+    "stop_reasons": {
+      "larger_on_smaller": 2,
+      "solved": 2,
+      "no_answer_cap_in_thinking": 1
+    },
+    "looping": 0,
+    "loop_periods": {}
+  },
+  {
+    "n": 8,
+    "thinking": false,
+    "responses": 25,
+    "correct": 0,
+    "capped": 25,
+    "cap_in_thinking": 0,
+    "required_moves": 255,
+    "median_moves_emitted": 4095.0,
+    "median_valid_prefix": 4.0,
+    "max_valid_prefix": 10,
+    "median_optimal_prefix": 4.0,
+    "median_valid_fraction": 0.01568627450980392,
+    "stop_reasons": {
+      "larger_on_smaller": 23,
+      "unknown_peg": 2
+    },
+    "looping": 25,
+    "loop_periods": {
+      "3": 20,
+      "9": 2,
+      "5": 1,
+      "4": 1,
+      "8": 1
+    }
+  },
+  {
+    "n": 8,
+    "thinking": true,
+    "responses": 12,
+    "correct": 0,
+    "capped": 12,
+    "cap_in_thinking": 2,
+    "required_moves": 255,
+    "median_moves_emitted": 3158.5,
+    "median_valid_prefix": 4.0,
+    "max_valid_prefix": 7,
+    "median_optimal_prefix": 4.0,
+    "median_valid_fraction": 0.01568627450980392,
+    "stop_reasons": {
+      "larger_on_smaller": 10,
+      "no_answer_cap_in_thinking": 2
+    },
+    "looping": 10,
+    "loop_periods": {
+      "3": 8,
+      "7": 1,
+      "6": 1
+    }
+  },
+  {
+    "n": 9,
+    "thinking": false,
+    "responses": 25,
+    "correct": 0,
+    "capped": 25,
+    "cap_in_thinking": 0,
+    "required_moves": 511,
+    "median_moves_emitted": 4095.0,
+    "median_valid_prefix": 4.0,
+    "max_valid_prefix": 9,
+    "median_optimal_prefix": 0.0,
+    "median_valid_fraction": 0.007827788649706457,
+    "stop_reasons": {
+      "larger_on_smaller": 24,
+      "empty_source": 1
+    },
+    "looping": 25,
+    "loop_periods": {
+      "3": 23,
+      "4": 1,
+      "6": 1
+    }
+  },
+  {
+    "n": 9,
+    "thinking": true,
+    "responses": 25,
+    "correct": 0,
+    "capped": 25,
+    "cap_in_thinking": 2,
+    "required_moves": 511,
+    "median_moves_emitted": 3231.0,
+    "median_valid_prefix": 4.0,
+    "max_valid_prefix": 11,
+    "median_optimal_prefix": 0.0,
+    "median_valid_fraction": 0.007827788649706457,
+    "stop_reasons": {
+      "larger_on_smaller": 23,
+      "no_answer_cap_in_thinking": 2
+    },
+    "looping": 22,
+    "loop_periods": {
+      "3": 13,
+      "8": 2,
+      "5": 1,
+      "12": 2,
+      "2": 1,
+      "4": 1,
+      "11": 1,
+      "6": 1
+    }
+  },
+  {
+    "n": 10,
+    "thinking": false,
+    "responses": 25,
+    "correct": 0,
+    "capped": 25,
+    "cap_in_thinking": 0,
+    "required_moves": 1023,
+    "median_moves_emitted": 4095.0,
+    "median_valid_prefix": 4.0,
+    "max_valid_prefix": 7,
+    "median_optimal_prefix": 4.0,
+    "median_valid_fraction": 0.0039100684261974585,
+    "stop_reasons": {
+      "empty_source": 1,
+      "larger_on_smaller": 23,
+      "unknown_peg": 1
+    },
+    "looping": 25,
+    "loop_periods": {
+      "10": 2,
+      "3": 23
+    }
+  },
+  {
+    "n": 10,
+    "thinking": true,
+    "responses": 25,
+    "correct": 0,
+    "capped": 25,
+    "cap_in_thinking": 0,
+    "required_moves": 1023,
+    "median_moves_emitted": 3245.0,
+    "median_valid_prefix": 4.0,
+    "max_valid_prefix": 9,
+    "median_optimal_prefix": 4.0,
+    "median_valid_fraction": 0.0039100684261974585,
+    "stop_reasons": {
+      "larger_on_smaller": 25
+    },
+    "looping": 24,
+    "loop_periods": {
+      "8": 3,
+      "3": 15,
+      "6": 3,
+      "10": 2,
+      "2": 1
+    }
+  }
+]

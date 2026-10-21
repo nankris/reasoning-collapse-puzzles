@@ -1,0 +1,8 @@
+{
+  "run_gpu.py": "06354b7237d5433007f2dbea3b096645aa8d0f6280b942e714ac79c30063fd54",
+  "puzzles.py": "014bf5ab7e57c4912ad285d4caaebc705a1d493e7af04a1c60cdfdb6a474dcb7",
+  "analyze.py": "f040370803750f95b6f9326951900c3576154966ca68f73823930e25829cbe3c",
+  "hypotheses.py": "4b6dd0da9da8efed0cbd4847950f2a4973ef9c1a388dec7abef052e82a4dc70d",
+  "resolved_model_revision": "4da05a8edb55c6046cce958586c33b61da07bb79",
+  "original_revision": "4da05a8edb55c6046cce958586c33b61da07bb79"
+}

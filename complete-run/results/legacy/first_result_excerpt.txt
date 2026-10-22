@@ -1,0 +1,8 @@
+# Qwen3 puzzle execution and the limits of this test
+
+**Verdict: INCONCLUSIVE** for the registered three-regime collapse pattern. H4 representation verdict: **INCONCLUSIVE**.
+
+**Headline number: 150/150 executable Hanoi answers passed** at eight to ten disks, pooling both modes (95% Wilson interval 97.5–100.0%). This descriptive endpoint does not replace the registered paired representation test.
+
+Plain-English takeaway: Qwen3 can produce compact Hanoi programs that a deterministic interpreter executes successfully. This experiment's collapse conclusion is limited by incomplete samples and/or length censoring, so exact move-list failures cannot by themselves establish that the model stopped reasoning.
+
